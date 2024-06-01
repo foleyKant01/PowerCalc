@@ -1,0 +1,7 @@
+{
+  "name": "PowerCalc",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
