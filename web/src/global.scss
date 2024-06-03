@@ -35,3 +35,37 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+/* Ajout des styles pour un fond blanc global */
+ion-content {
+  --background: #ffffff;
+}
+
+ion-header,
+ion-toolbar {
+  --background: #ffffff;
+}
+
+/* Définir la couleur du texte en noir */
+body, ion-content, ion-header, ion-toolbar {
+  color: #000000;
+}
+
+/* Assurez-vous également de spécifier les couleurs du texte pour les différents composants */
+:root {
+  --ion-text-color: #000000;
+  --ion-color-primary-contrast: #000000;
+  --ion-color-secondary-contrast: #000000;
+  --ion-color-tertiary-contrast: #000000;
+  --ion-color-success-contrast: #000000;
+  --ion-color-warning-contrast: #000000;
+  --ion-color-danger-contrast: #000000;
+  --ion-color-light-contrast: #000000;
+  --ion-color-medium-contrast: #000000;
+  --ion-color-dark-contrast: #000000;
+}
+
+/* Ajustement des couleurs des textes spécifiques si nécessaire */
+ion-title, ion-label, ion-text {
+  color: #000000 !important;
+}

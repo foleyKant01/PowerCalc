@@ -1,20 +1,38 @@
-<ion-header [translucent]="true">
+<ion-header id="header" [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      PowerCalc
-    </ion-title>
+    <ion-grid>
+      <ion-row>
+        <ion-col style="border: 1px solid ;" size="2">
+          <div class="column-content">
+            <ion-icon name="heart" aria-label="Favorite"></ion-icon>
+          </div>
+        </ion-col>
+        <ion-col style="border: 1px solid ;" size="8">
+          <div class="column-content">
+            <ion-title>PowerCalc</ion-title>
+          </div>
+        </ion-col>
+        <ion-col style="border: 1px solid ;" size="2">
+          <div class="column-content">
+            <img src="assets/icon/your-icon.png" alt="Icon" class="header-icon">
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
+  <div id="container" >
+        <i class="fa-solid fa-bars"></i>
+        <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
 </ion-content>
