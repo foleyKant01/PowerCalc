@@ -1,21 +1,17 @@
 <ion-header id="header" [translucent]="true">
   <ion-toolbar>
-    <ion-grid>
+    <ion-grid class="head-grid">
       <ion-row>
-        <ion-col style="border: 1px solid ;" size="2">
-          <div class="column-content">
-            <ion-icon name="heart" aria-label="Favorite"></ion-icon>
-          </div>
+        <ion-col size="2">
+          <ion-icon id="menu" name="menu" aria-label="Menu"></ion-icon>
         </ion-col>
-        <ion-col style="border: 1px solid ;" size="8">
-          <div class="column-content">
-            <ion-title>PowerCalc</ion-title>
-          </div>
+        <ion-col size="8">
+          <ion-title style="font-size: 100%;" id="title">
+            <ion-router-link routerLink="/home"><h2 class="m-0">Power Calc</h2></ion-router-link>
+          </ion-title>
         </ion-col>
-        <ion-col style="border: 1px solid ;" size="2">
-          <div class="column-content">
-            <img src="assets/icon/your-icon.png" alt="Icon" class="header-icon">
-          </div>
+        <ion-col size="2">
+          <ion-icon id="person" name="person" aria-label="Profile"></ion-icon>
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -23,12 +19,18 @@
 </ion-header>
 
 
-<ion-content [fullscreen]="true">
-  <!-- <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header> -->
+<ion-content id="content" [fullscreen]="true">
+  <div class="circle-container">
+    <div class="circle">
+      <!-- Votre contenu ici -->
+    </div>
+  </div>
+
+  <div class="content-container">
+    <p>Contenu du paragraphe</p> <!-- Ajout du paragraphe -->
+  </div>
+
+
 
   <div id="container" >
         <i class="fa-solid fa-bars"></i>
