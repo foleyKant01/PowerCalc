@@ -66,6 +66,11 @@ body, ion-content, ion-header, ion-toolbar {
 }
 
 /* Ajustement des couleurs des textes spécifiques si nécessaire */
-ion-title, ion-label, ion-text {
+ion-title, ion-label, ion-text, ion-content {
   color: #000000 !important;
+}
+.inner-scroll {
+
+  color: #000000;
+
 }
