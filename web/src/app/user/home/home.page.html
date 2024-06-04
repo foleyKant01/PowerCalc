@@ -1,0 +1,43 @@
+<!-- <app-header></app-header> -->
+
+<ion-content id="content" [fullscreen]="true">
+  <div class="circle-container">
+    <div class="circle">
+      <div class="inner-circle">
+        <div>
+          <span class="inner-circle-text">Prix du KWH</span>
+          <span style="color: #EE7D04!important;" class="inner-circle-text"><h3><b>80 FCFA</b></h3></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="container" >
+    <p>Calcule générés</p> <!-- Ajout du paragraphe -->
+    <div class="property">
+      <ion-router-link style="background-color: #F8A042!important; padding: 5px 8px 5px 8px; border-radius: 20px;" routerLink="/user/add-property">add a property</ion-router-link>
+      <ion-list  >
+
+      </ion-list>
+      <ion-grid class="p-0">
+        <ion-row class="p-0" style="display: flex; align-items: center; height: auto; justify-content: space-around;">
+          <ion-col style="display: flex; justify-content: space-between;" size="8">
+            <ion-col style="padding-top: 13px;" size="2">
+              <ion-icon style="color: black;" id="home" name="home" aria-label="home"></ion-icon>
+            </ion-col>
+            <ion-col style="padding-top: 9px;" size="10">
+              <ion-router-link style="text-align: left;" routerLink="/home"><h3 class="m-0 h3">Home</h3></ion-router-link>
+            </ion-col>
+          </ion-col>
+          <ion-col class="p-0 pt-1 pb-1" style="display: flex; justify-content: space-between;" size="4">
+            <ion-button class="custom-button">
+              <ion-icon id="trash" name="trash" aria-label="trash"></ion-icon>
+            </ion-button>
+            <ion-button class="custom-button">
+              <ion-icon id="pencil" name="pencil" aria-label="pencil"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>

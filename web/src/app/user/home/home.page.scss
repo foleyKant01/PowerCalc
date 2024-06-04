@@ -1,0 +1,150 @@
+#container {
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+ion-router-link {
+  color: black;
+}
+
+#content {
+  color: black;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: black;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.header-icon {
+  width: 24px;
+  /* Ajustez la taille de l'icône selon vos besoins */
+  height: 24px;
+  /* Ajustez la taille de l'icône selon vos besoins */
+  margin-right: 8px;
+  /* Ajustez l'espacement entre l'icône et le texte selon vos besoins */
+}
+
+.head-grid {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+#menu {
+  margin-top: 4px;
+  width: 28px;
+  height: 30px;
+}
+
+#person {
+  margin-top: 4px;
+  width: 26px;
+  height: 26px;
+}
+
+#title {
+  margin-top: 8px;
+}
+
+.h3 {
+  font-size: 1.375rem;
+  color: black;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  /* Ajustez selon votre besoin */
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #ff0000 0% 25%,  /* Rouge */
+    #ffa500 25% 28.56%,  /* Orange */
+    #ffff00 28.56% 42.84%,  /* Jaune */
+    #008000 42.84% 65%,  /* Vert */
+    #0000ff 57.12% 71.40%,  /* Bleu */
+    #4b0082 71.40% 80.68%,  /* Indigo */
+    #ee82ee 80.68% 100%  /* Violet */
+  );  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-circle {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background-color: white; /* Couleur du petit cercle */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inner-circle-text {
+  font-size: 12px; /* Adjust the font size as needed */
+  color: black; /* Adjust the text color as needed */
+  text-align: center;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  /* Ajustez selon votre besoin */
+}
+
+.inner-scroll {
+
+  color: #000000;
+
+}
+
+.property {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  height: auto;
+  padding: 40px 10px 10px 10px;
+  background-color: rgb(233, 233, 233);
+  margin-top: 5px;
+}
+
+.list-md {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color:  transparent;
+}
+
+.custom-button {
+  --background: rgb(212, 212, 212);
+  --color: #000000; /* Texte noir pour contraste */
+  border-radius: 8px; /* Bords arrondis */
+}
