@@ -1,13 +1,54 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>add-property</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header></app-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">add-property</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content id="content" [fullscreen]="true">
+  <div class="header">
+    <h2><b>Add property</b></h2>
+  </div>
+  <ion-list class="forms">
+
+    <ion-item class="p-0" style="width: 80%; height: auto;">
+      <ion-label>Select your property: </ion-label>
+      <ion-select style="height: 30px;" class="custom-select">
+        <ion-select-option value="option1">Home</ion-select-option>
+        <ion-select-option value="option2">Compagny</ion-select-option>
+        <ion-select-option value="option3">Store</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <div class="device">
+      <h4 class=" mb-3">Enter device information</h4>
+
+      <ion-item class="p-0" style="background-color: transparent;">
+        <ion-label>Device name: </ion-label>
+        <ion-input type="text" ></ion-input>
+      </ion-item>
+
+      <ion-item class="p-0">
+        <ion-label>Device amperage: </ion-label>
+        <ion-select class="custom-select">
+          <ion-select-option value="option1">Home</ion-select-option>
+          <ion-select-option value="option2">Compagny</ion-select-option>
+          <ion-select-option value="option3">Store</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item class="p-0">
+        <ion-label>Device wattage: </ion-label>
+        <ion-select class="custom-select">
+          <ion-select-option value="option1">Home</ion-select-option>
+          <ion-select-option value="option2">Compagny</ion-select-option>
+          <ion-select-option value="option3">Store</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item class="p-0">
+        <ion-label>Device usage time: </ion-label>
+        <ion-input type="email" ></ion-input>
+      </ion-item>
+    </div>
+
+  </ion-list>
+  <div class="p-5">
+    <ion-button color="success" expand="block">Add</ion-button>
+  </div>
 </ion-content>
