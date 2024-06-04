@@ -2,11 +2,10 @@ from flask_jwt_extended import JWTManager, jwt_required, create_access_token, ge
 from flask import Flask, render_template
 import os
 from flask_restful import Resource, Api
-from config.db import db
+from config.db import *
 from config.constant import *
-from model.tt import *
-from resources.admin import AdminApi
-from resources.products import ProductsApi
+from model.powercalc import *
+from resources.powercalc import *
 from flask_migrate import Migrate
 from flask import Flask
 from flask_cors import CORS
@@ -39,8 +38,8 @@ def home():
     print('Trouvez Tous Officiel')
     return render_template('index.html')
 
-api.add_resource(AdminApi, '/api/admin/<string:route>', endpoint='all_user', methods=['GET', 'POST', 'DELETE', 'PATCH'])
-api.add_resource(ProductsApi, '/api/products/<string:route>', endpoint='all_products', methods=['GET', 'POST', 'DELETE', 'PATCH'])
+api.add_resource(UserApi, '/api/user/<string:route>', endpoint='all_user', methods=['GET', 'POST', 'DELETE', 'PATCH'])
+# api.add_resource(ProductsApi, '/api/products/<string:route>', endpoint='all_products', methods=['GET', 'POST', 'DELETE', 'PATCH'])
 
 if __name__ == '__main__':
     app.run(debug=True,  host="0.0.0.0")  
