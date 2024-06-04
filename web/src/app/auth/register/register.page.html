@@ -1,13 +1,96 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>register</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">register</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding content">
+  <div class="img-content">
+      <!-- <ion-thumbnail class="cie-img">
+          <img alt="" src="assets/img/CIE-logo.jpeg" />
+      </ion-thumbnail> -->
+      <ion-img class="login-img" src="assets/img/log_backgroung.jpeg"
+          alt="">
+      </ion-img>
+      <div class="cie-overlay">
+          <ion-thumbnail class="cie-img">
+              <img alt="" src="assets/img/CIE-logo.jpeg" />
+          </ion-thumbnail>
+      </div>
+
+  </div>
+  <!-- <div class="img-content">
+      <ion-img class="cie-img" src="assets/img/CIE-logo.jpeg"
+      alt="">
+      </ion-img>
+  </div> -->
+
+  <div class="form-container">
+      <ion-row>
+          <ion-label class="ion-text-center login-title h2" id="h2-register"><strong>Register</strong></ion-label>
+      </ion-row>
+
+      <ion-row>
+          <small class="register-small">Sign up to continue</small>
+      </ion-row>
+
+      <form class="login-form" method="" action="">
+          <div class="section">
+              <ion-label class="name-label">Name</ion-label>
+              <ion-item lines="none" class="input-items">
+                  <ion-input labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter your full name">
+                  </ion-input>
+              </ion-item>
+          </div>
+
+          <div class="section">
+            <ion-label class="name-label">Username</ion-label>
+            <ion-item lines="none" class="input-items">
+                <ion-input labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter your Username">
+                </ion-input>
+            </ion-item>
+        </div>
+
+        <div class="section">
+            <ion-label class="name-label">mobile</ion-label>
+            <ion-item lines="none" class="input-items">
+                <ion-input labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter your phone address">
+                </ion-input>
+            </ion-item>
+        </div>
+
+        <div class="section">
+            <ion-label class="email-label">address</ion-label>
+            <ion-item lines="none" class="input-items">
+                <ion-input labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter your location">
+                </ion-input>
+            </ion-item>
+        </div>
+
+        <div class="section">
+            <ion-label class="email-label">Email</ion-label>
+            <ion-item lines="none" class="input-items">
+                <ion-input labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter your email address">
+                </ion-input>
+            </ion-item>
+        </div>
+
+
+          <div class="section">
+              <ion-label class="password-label">Password</ion-label>
+              <ion-item lines="none" class="input-items">
+                  <ion-input labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter password">
+                  </ion-input>
+              </ion-item>
+          </div>
+
+          <ion-button class="register-button"  expand="block">Submit</ion-button>
+
+          <ion-row class="register-small-connected">
+            <small>Already have an account!<a href="#" class="signin-link">Sign</a></small>
+          </ion-row>
+
+      </form>
+  </div>
+
 </ion-content>
