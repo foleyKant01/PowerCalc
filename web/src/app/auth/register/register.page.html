@@ -1,8 +1,8 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>register</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content class="ion-padding content">
   <div class="img-content">
@@ -27,11 +27,11 @@
 
   <div class="form-container">
       <ion-row>
-          <ion-label class="ion-text-center login-title h2" id="h2-login"><strong>Register</strong></ion-label>
+          <ion-label class="ion-text-center login-title h2" id="h2-register"><strong>Register</strong></ion-label>
       </ion-row>
 
       <ion-row>
-          <small class="login-small">Sign up to continue</small>
+          <small class="register-small">Sign up to continue</small>
       </ion-row>
 
       <form class="login-form" method="" action="">
@@ -44,12 +44,37 @@
           </div>
 
           <div class="section">
+            <ion-label class="name-label">Username</ion-label>
+            <ion-item lines="none" class="input-items">
+                <ion-input labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter your Username">
+                </ion-input>
+            </ion-item>
+        </div>
+
+        <div class="section">
+            <ion-label class="name-label">mobile</ion-label>
+            <ion-item lines="none" class="input-items">
+                <ion-input labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter your phone address">
+                </ion-input>
+            </ion-item>
+        </div>
+
+        <div class="section">
+            <ion-label class="email-label">address</ion-label>
+            <ion-item lines="none" class="input-items">
+                <ion-input labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter your location">
+                </ion-input>
+            </ion-item>
+        </div>
+
+        <div class="section">
             <ion-label class="email-label">Email</ion-label>
             <ion-item lines="none" class="input-items">
                 <ion-input labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter your email address">
                 </ion-input>
             </ion-item>
-          </div>
+        </div>
+
 
           <div class="section">
               <ion-label class="password-label">Password</ion-label>
@@ -59,24 +84,10 @@
               </ion-item>
           </div>
 
-          <div class="section">
-            <ion-label class="birth-label">Date of birth</ion-label>
-            <ion-item lines="none" class="input-items">
-                <ion-input labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter date of birth">
-                </ion-input>
-            </ion-item>
-        </div>
-
           <ion-button class="register-button"  expand="block">Submit</ion-button>
 
-          <ion-row class="ion-align-items-center">
-              <ion-col>
-                <small style="color: black;">
-                  Already have an account
-                  <a href="#" class="signin-link">Sign</a>
-                </small>
-                  
-              </ion-col>
+          <ion-row class="register-small-connected">
+            <small>Already have an account!<a href="#" class="signin-link">Sign</a></small>
           </ion-row>
 
       </form>
