@@ -41,4 +41,39 @@
     top: 12vh;
     position: relative;
     height: 50vh;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+
+    .label {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        margin-top: 14px;
+        font-size: 20px;
+    }
+    ion-list{
+        background-color: #EFF3F4;;
+    }
+    ion-item {
+        --background: #EFF3F4; /* Définir la couleur de fond pour chaque élément de la liste */
+    }
+
+  
 }
+
+.footer_btn {
+    justify-content: center;
+    display: flex;
+  }
+  
+  .back_button {
+    width: 145px;
+    right: 20px;
+    position: relative;
+  }
+  
+  .print_button {
+    width: 145px;
+    left: 20px;
+    position: relative;
+  }
