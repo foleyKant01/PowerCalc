@@ -40,22 +40,15 @@
 }
 
 ion-row{
+    position: relative;
+    top: 70px;  
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 70px;
     font-size: xx-large;
 }
 
 #h2-login{
     color: #EE7D04!important;
-}
-
-
-.login-small {
-    color: black!important;
-    font-size: 15px !important;
-    margin-top: 10px;
 }
 
 .section {
@@ -74,8 +67,7 @@ ion-row{
 }
 
 .input-items {
-    background: linear-gradient(to right, #d3d3d3, #a9a9a9);
-    // background-color: transparent;
+    background-color: transparent;
     border-radius: 30px;
     padding: 10px;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -83,7 +75,7 @@ ion-row{
 
 ion-input {
     --background: transparent;
-    color: #f30808;
+    color: #000;
 }
 
 .username-label, .password-label{
@@ -92,20 +84,31 @@ ion-input {
     width: auto;   
 }
 
+
+.login-small {
+    color: black!important;
+    font-size: 15px !important;
+    margin-top: 10px;
+}
+
 .login-button {
     position: relative;
     top: 95px;
     margin: auto;
-    width: 88%;
+    width: 70%;
     margin-top: 27px;
     border-radius: 60px;
     color: #fff;
     background: #EE7D04;
-    }
+}
+
+.login-button:hover {
+    background-color: #ff9d1a; /* Une version plus lumineuse de #EE7D04 */
+}
 
 .forgot-link {
     position: relative;
-    margin: 10px 0;
+    margin: 35px 0;
     width: auto;
     justify-content: center;
     text-align: center;
