@@ -18,7 +18,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Autres styles pour l'overlay */
 }
 
 .cie-img {
@@ -91,7 +90,7 @@ ion-input {
     // display:contents;
 }
 
-.havea-account {
+.have-account {
     margin-bottom: 10px;
 }
 
@@ -109,7 +108,7 @@ ion-input {
     margin-top: 27px;
     border-radius: 60px;
     color: #fff;
-    background: #EE7D04;
+    background: var(--ion-color-btn);
 }
 
 .register-button:hover {

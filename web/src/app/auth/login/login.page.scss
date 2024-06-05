@@ -1,3 +1,25 @@
+body {
+    overflow: hidden;
+}
+
+ion-content {
+    --overflow: hidden;
+    height: 100vh;
+}
+
+ion-content.fullscreen {
+    height: 100vh;
+}
+
+.no-scroll .inner-scroll {
+    height: 100%;
+    overflow: hidden;
+}
+
+.scroll-y {
+    overflow-y: hidden !important;
+}
+
 .img-content {
     position: relative;
 }
@@ -18,7 +40,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Autres styles pour l'overlay */
 }
 
 .cie-img {
@@ -41,7 +62,7 @@
 
 ion-row{
     position: relative;
-    top: 70px;  
+    top: 30px;  
     display: flex;
     justify-content: center;
     font-size: xx-large;
@@ -51,12 +72,19 @@ ion-row{
     color: #EE7D04!important;
 }
 
+.login-small {
+    color: black!important;
+    font-size: 14px !important;
+    margin-top: 5px;
+}
+
+
 .section {
     position: relative;
-    top: 95px;
+    top: 55px;
     margin: auto;
-    width: 80%;
-    margin-top: 27px;
+    width: 90%;
+    margin-top: 10px;
 }
 
 .center-content {
@@ -69,7 +97,7 @@ ion-row{
 .input-items {
     background-color: transparent;
     border-radius: 30px;
-    padding: 10px;
+    padding: 0 10px;
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -81,25 +109,18 @@ ion-input {
 .username-label, .password-label{
     margin: 15px; 
     display: flex;
-    width: auto;   
-}
-
-
-.login-small {
-    color: black!important;
-    font-size: 15px !important;
-    margin-top: 10px;
+    width: auto;
 }
 
 .login-button {
     position: relative;
-    top: 95px;
+    top: 80PX;
     margin: auto;
     width: 70%;
     margin-top: 27px;
     border-radius: 60px;
     color: #fff;
-    background: #EE7D04;
+    background: var(--ion-color-btn);
 }
 
 .login-button:hover {
