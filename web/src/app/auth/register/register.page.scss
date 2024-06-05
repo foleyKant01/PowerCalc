@@ -43,8 +43,9 @@ ion-row{
     display: flex;
     justify-content: center;
     position: relative;
-    top: 70px;
+    top: 30px;
     font-size: xx-large;
+    margin: 5px 0;
 }
 
 #h2-register{
@@ -53,91 +54,79 @@ ion-row{
 
 .section {
     position: relative;
-    top: 95px;
+    top: 50px;
     margin: auto;
-    width: 80%;
-    margin-top: 27px;
+    width: 90%;
+    margin-top: 15px;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .input-items {
     background-color: transparent;
     border-radius: 30px;
+    margin: 5px 0;
+    padding: 0 10px;
 }
 
-.name-label{
+.name-label, .email-label, .password-label, .birth-label {
     margin: 15px; 
     display: flex;
     width: 34px;   
     // display:contents;
 }
 
-
-.email-label{
-    margin: 15px; 
-    display: flex;
-    width: 34px;   
-    // display:contents;
+.havea-account {
+    margin-bottom: 10px;
 }
-
-.password-label {
-    margin: 15px; 
-    display: flex;
-    width: 34px;  
-}
-
-.birth-label{
-    margin: 15px; 
-    display: flex;
-    width: 34px;
-}
-
 
 .register-button {
     position: relative;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-
-    top: 95px;
+    top: 50px;
     margin: auto;
-    width: 88%;
-    margin-top: 27px;
-    border-radius: 60px;
-    // box-shadow: 5px 5px 5px #EE7D04;
-    color: #EE7D04;
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 30px;
     color: #fff;
-    background: #FFA500;
     background-color: #EE7D04;
-    // border: 1px solid #EE7D04;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #ff9d1a; /* Une version plus lumineuse de #EE7D04 */
 }
 
 .register-small {
     color: black!important;
-    font-size: 15px !important;
-    margin-top: 10px;
+    font-size: 14px !important;
+    margin-top: 5px;
 }
 
 .register-small-connected {
     text-align: center;
-    // align-items: center;
     color: black !important;
-    font-size: 15px !important;
-    margin-top: 25px;
+    font-size: 14px !important;
+    margin-top: 10px;
     display: inline-block;
     // right: 15px;
     // margin-top: -10px; /* Ajustez cette valeur selon vos besoins */
 }
 
 .signin-link {
-    position: relative;
-    top: 34px;
-    margin: 136px;
-    width: 50%;
-    margin-top: 51px;
-    justify-content: center;
-    text-align: center;
-    size: 10px;
+    font-size: 14px;
+    color: #EE7D04;
+    text-decoration: none;
 }
 
+.signin-link:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
