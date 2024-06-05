@@ -38,8 +38,8 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
-@import '@ionic/angular/css/palettes/high-contrast.system.css';
-@import '@ionic/angular/css/palettes/high-contrast-dark.system.css';
+  // @import '@ionic/angular/css/palettes/high-contrast.system.css';
+  // @import '@ionic/angular/css/palettes/high-contrast-dark.system.css';
 
 /* Ajout des styles pour un fond blanc global */
 // ion-content {
@@ -71,28 +71,28 @@
 /* Ajout des styles pour un fond blanc global */
 
 
-ion-content {
-  --background: #ffffff;
-  color: #000000;
-}
+// ion-content {
+//   --background: #ffffff;
+//   color: #000000;
+// }
 
-ion-header,
-ion-toolbar, ion-item {
-  --background: #ffffff;
-}
+// ion-header,
+// ion-toolbar, ion-item {
+//   --background: #ffffff;
+// }
 
-/* Définir la couleur du texte en noir */
-body, ion-header, ion-toolbar {
-  color: #000000;
-}
+// /* Définir la couleur du texte en noir */
+// body, ion-header, ion-toolbar {
+//   color: #000000;
+// }
 
 
-/* Ajustement des couleurs des textes spécifiques si nécessaire */
-ion-title, ion-label, ion-text, ion-item {
-  color: #000000 !important;
-}
-.inner-scroll {
+// /* Ajustement des couleurs des textes spécifiques si nécessaire */
+// ion-title, ion-label, ion-text, ion-item {
+//   color: #000000 !important;
+// }
+// .inner-scroll {
 
-  color: #000000;
+//   color: #000000;
 
-}
+// }
