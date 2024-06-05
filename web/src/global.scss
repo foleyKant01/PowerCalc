@@ -38,6 +38,8 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+@import '@ionic/angular/css/palettes/high-contrast.system.css';
+@import '@ionic/angular/css/palettes/high-contrast-dark.system.css';
 
 /* Ajout des styles pour un fond blanc global */
 // ion-content {
@@ -67,6 +69,8 @@
 // }
 
 /* Ajout des styles pour un fond blanc global */
+
+
 ion-content {
   --background: #ffffff;
   color: #000000;

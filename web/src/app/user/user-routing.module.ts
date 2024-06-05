@@ -13,22 +13,25 @@ const routes: Routes = [
   { path:'', component: UserPage,
   children: [
     { path:'', redirectTo:'home', pathMatch:'full' },
-    { path:'home', component: HomePage },
-    { path:'add-property', component: AddPropertyPage },
+    {
+      path: 'home',
+      loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    },
+    {
+      path: 'add-property',
+      loadChildren: () => import('./add-property/add-property.module').then( m => m.AddPropertyPageModule)
+    },
+    {
+      path: 'header',
+      loadChildren: () => import('./include/header/header.module').then( m => m.HeaderPageModule)
+    },
+    {
+      path: 'invoice',
+      loadChildren: () => import('./invoice/invoice.module').then( m => m.InvoicePageModule)
+    }
   ]
   },
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
-    path: 'add-property',
-    loadChildren: () => import('./add-property/add-property.module').then( m => m.AddPropertyPageModule)
-  },
-  {
-    path: 'header',
-    loadChildren: () => import('./include/header/header.module').then( m => m.HeaderPageModule)
-  }
+  
 ];
 
 @NgModule({

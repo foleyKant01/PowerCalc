@@ -1,0 +1,41 @@
+.logo-img {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+  }
+  
+  .page-container {
+    position: relative;
+    background: #FFF;
+    height: 150%;
+    bottom: 8%;
+    border-top-right-radius: 60px;
+  
+    .img-succes {
+        width: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        top: 8vh;
+    }
+
+    .label {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        top: 10vh;
+        color: #3EB655 !important;
+    }
+    .message {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        top: 12vh;
+    }
+  }
