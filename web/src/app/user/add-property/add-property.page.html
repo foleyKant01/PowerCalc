@@ -4,18 +4,66 @@
   <div class="header">
     <h2><b>Add property</b></h2>
   </div>
-  <ion-list class="forms">
+  <ion-item class="p-0">
+    <ion-label>Select your property: </ion-label>
+    <ion-select style="height: 30px;" class="custom-select" (ionChange)="selectedOption = $event.detail.value">
+      <ion-select-option value="option1">Home</ion-select-option>
+      <ion-select-option value="option2">Compagny</ion-select-option>
+      <ion-select-option value="option3">Store</ion-select-option>
+    </ion-select>
+  </ion-item>
 
-    <ion-item class="p-0">
-      <ion-label>Select your property: </ion-label>
-      <ion-select style="height: 30px;" class="custom-select">
-        <ion-select-option value="option1">Home</ion-select-option>
-        <ion-select-option value="option2">Compagny</ion-select-option>
-        <ion-select-option value="option3">Store</ion-select-option>
-      </ion-select>
-    </ion-item>
+  <ion-button class="opemodal" (click)="openModal()">Add device</ion-button>
 
-    <div class="device">
+  <ng-container *ngIf="showModal">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Formulaire</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="closeModal()">Fermer</ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <form (ngSubmit)="onSubmit()">
+        <ion-item>
+          <ion-label>Option 1</ion-label>
+          <ion-select placeholder="Sélectionner une option">
+            <ion-select-option value="opt1">Option 1</ion-select-option>
+            <ion-select-option value="opt2">Option 2</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label>Option 2</ion-label>
+          <ion-select placeholder="Sélectionner une option">
+            <ion-select-option value="opt1">Option 1</ion-select-option>
+            <ion-select-option value="opt2">Option 2</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label>Option 3</ion-label>
+          <ion-select placeholder="Sélectionner une option">
+            <ion-select-option value="opt1">Option 1</ion-select-option>
+            <ion-select-option value="opt2">Option 2</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label>Option 4</ion-label>
+          <ion-select placeholder="Sélectionner une option">
+            <ion-select-option value="opt1">Option 1</ion-select-option>
+            <ion-select-option value="opt2">Option 2</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-button class="opemo"  type="submit">Soumettre</ion-button>
+      </form>
+    </ion-content>
+  </ng-container>
+</ion-content>
+
+
+
+    <!-- <div class="device">
       <h4 class=" mb-3">Enter device information</h4>
 
       <ion-item class="p-0" style="background-color: transparent;">
@@ -52,4 +100,4 @@
 
   </ion-list>
 
-</ion-content>
+</ion-content> -->
