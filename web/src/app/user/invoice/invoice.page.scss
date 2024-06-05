@@ -6,3 +6,39 @@
     top: 5%;
     font-family: system-ui;
 }
+.chart-container{
+
+.chart-segment   {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    top: 8vh;
+}
+.amount-title {
+    position: relative;
+    top: 11vh;
+    color: #010101 !important;
+    display: flex; 
+    justify-content: center;
+    
+}
+.amount {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 10vh;
+    font-size: 40px;
+    color: #010101 !important;
+}
+
+}
+
+.invoice-details {
+    background: #EFF3F4;
+    width: 100%;
+    top: 12vh;
+    position: relative;
+    height: 50vh;
+}

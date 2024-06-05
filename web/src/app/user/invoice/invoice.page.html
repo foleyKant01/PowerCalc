@@ -1,23 +1,22 @@
-
-
 <ion-content [fullscreen]="true">
- <ion-row class="title">
-  <h1>INVOICE</h1>
- </ion-row>
- <div class="chart-container">
-  <ion-title class="amount-title">Montant</ion-title>
-  <ion-segment class="chart-segment">
-    <!-- Remplacez les valeurs par celles de votre graphique -->
-    <ion-segment-button value="section1" checked>
-      70%
-    </ion-segment-button>
-    <ion-segment-button value="section2">
-      30%
-    </ion-segment-button>
-  </ion-segment>
-</div>
+  <ion-row class="title">
+    <h1>INVOICE</h1>
+  </ion-row>
 
-<div class="invoice-details">
-  <ion-label class="label">Invoice details</ion-label>
-</div>
+  <ion-row>
+    <div class="chart-container">
+      <ion-segment class="chart-segment">
+        <ion-img src="assets/img/chart-pie1.png"></ion-img>
+      </ion-segment>
+      <h3 class="amount-title">Amount</h3>
+      <ion-label class="amount">150000 Fcfa</ion-label>
+    </div>
+  </ion-row>
+
+  <ion-row>
+    <div class="invoice-details">
+      <ion-label class="label">Invoice details</ion-label>
+    </div>
+  </ion-row>
+
 </ion-content>
