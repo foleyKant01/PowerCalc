@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { UserPage } from './user.page';
-import { HomePage } from './home/home.page';
-import { AddPropertyPage } from './add-property/add-property.page';
+
 
 const routes: Routes = [
   // {
@@ -28,9 +27,10 @@ const routes: Routes = [
     {
       path: 'invoice',
       loadChildren: () => import('./invoice/invoice.module').then( m => m.InvoicePageModule)
-    }
+    },
   ]
   },
+ 
   
 ];
 
