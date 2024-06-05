@@ -36,20 +36,25 @@
     background-color: #fff;
     width: 112%;
     border-radius: 5px;
-    border-top-right-radius: 72px;
+    border-top-left-radius: 72px;
 }
 
 ion-row{
-    display: flex;
-    justify-content: center;
     position: relative;
     top: 30px;
+    display: flex;
+    justify-content: center;
     font-size: xx-large;
-    margin: 5px 0;
 }
 
 #h2-register{
     color: #EE7D04!important;
+}
+
+.register-small {
+    color: black!important;
+    font-size: 14px !important;
+    margin-top: 5px;
 }
 
 .section {
@@ -70,14 +75,19 @@ ion-row{
 .input-items {
     background-color: transparent;
     border-radius: 30px;
-    margin: 5px 0;
     padding: 0 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+ion-input {
+    --background: transparent;
+    color: #000;
 }
 
 .name-label, .email-label, .password-label, .birth-label {
     margin: 15px; 
     display: flex;
-    width: 34px;   
+    width: auto;   
     // display:contents;
 }
 
@@ -85,48 +95,39 @@ ion-row{
     margin-bottom: 10px;
 }
 
+.register-small {
+    color: black !important;
+    font-size: 14px !important;
+    margin-top: 10px;
+}
+
 .register-button {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
     top: 50px;
     margin: auto;
-    width: 90%;
-    margin-top: 20px;
-    border-radius: 30px;
+    width: 88%;
+    margin-top: 27px;
+    border-radius: 60px;
     color: #fff;
-    background-color: #EE7D04;
-    transition: background-color 0.3s ease;
+    background: #EE7D04;
 }
 
 .register-button:hover {
     background-color: #ff9d1a; /* Une version plus lumineuse de #EE7D04 */
 }
 
-.register-small {
-    color: black!important;
-    font-size: 14px !important;
-    margin-top: 5px;
-}
-
-.register-small-connected {
-    text-align: center;
-    color: black !important;
-    font-size: 14px !important;
-    margin-top: 10px;
-    display: inline-block;
-    // right: 15px;
-    // margin-top: -10px; /* Ajustez cette valeur selon vos besoins */
-}
-
 .signin-link {
-    font-size: 14px;
+    font-size: 16px;
     color: #EE7D04;
     text-decoration: none;
+    margin-top: 5px;
 }
 
 .signin-link:hover {
     text-decoration: underline; /* Add underline on hover */
+}
+
+.Sign-up-message {
+    font-size: 16px;
+    color: #0f0808;
 }
