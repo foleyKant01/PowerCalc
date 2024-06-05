@@ -66,22 +66,30 @@ ion-row{
     margin-top: 27px;
 }
 
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .input-items {
-    background-color: transparent;
+    background: linear-gradient(to right, #d3d3d3, #a9a9a9);
+    // background-color: transparent;
     border-radius: 30px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.username-label{
-    margin: 15px; 
-    display: flex;
-    width: 34px;   
-    // display:contents;
+ion-input {
+    --background: transparent;
+    color: #f30808;
 }
 
-.password-label {
+.username-label, .password-label{
     margin: 15px; 
     display: flex;
-    width: 34px;  
+    width: auto;   
 }
 
 .login-button {
@@ -91,33 +99,31 @@ ion-row{
     width: 88%;
     margin-top: 27px;
     border-radius: 60px;
-    // box-shadow: 5px 5px 5px #EE7D04;
-    color: #EE7D04;
     color: #fff;
-    background: #FFA500;
-    background-color: #EE7D04;
-    // border: 1px solid #EE7D04;
-}
+    background: #EE7D04;
+    }
 
 .forgot-link {
     position: relative;
-    top: 34px;
-    margin: 90px;
-    width: 50%;
-    margin-top: 47px;
+    margin: 10px 0;
+    width: auto;
     justify-content: center;
     text-align: center;
-    size: 10px;
+    font-size: 12px;
 }
 
 .signup-link {
-    position: relative;
-    top: 34px;
-    margin: 136px;
-    width: 50%;
-    margin-top: 51px;
-    justify-content: center;
-    text-align: center;
-    size: 10px;
+    font-size: 16px;
+    color: #EE7D04;
+    text-decoration: none;
+    margin-top: 5px;
 }
 
+.signup-link:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.Sign-up-message {
+    font-size: 16px;
+    color: #0f0808;
+}
