@@ -7,6 +7,7 @@ import { ModalController } from '@ionic/angular';
   styleUrls: ['./add-property.page.scss'],
 })
 export class AddPropertyPage implements OnInit {
+
   selectedOption: any;
   showModal: boolean = false;
 
@@ -33,8 +34,5 @@ export class AddPropertyPage implements OnInit {
     console.log('Form submitted');
     this.closeModal();
   }
+
 }
-
-
-
-

@@ -14,8 +14,8 @@ import { HeaderPageModule } from '../include/header/header.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HeaderPageModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    HeaderPageModule
   ],
   declarations: [HomePage]
 })
