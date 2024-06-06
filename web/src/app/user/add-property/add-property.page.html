@@ -4,16 +4,68 @@
   <div class="header">
     <h2><b>Add property</b></h2>
   </div>
-  <ion-item class="p-0">
-    <ion-label>Select your property: </ion-label>
-    <ion-select style="height: 30px;" class="custom-select" (ionChange)="selectedOption = $event.detail.value">
-      <ion-select-option value="option1">Home</ion-select-option>
-      <ion-select-option value="option2">Compagny</ion-select-option>
-      <ion-select-option value="option3">Store</ion-select-option>
-    </ion-select>
-  </ion-item>
+  <form action="submit">
+    <ion-row>
+      <ion-list lines="none" class="property-list">
+        <ion-item>
+          <ion-select aria-label="Property" interface="action-sheet" placeholder="Select your property">
+            <ion-select-option *ngFor="let item of type_property"
+              [value]="item?.type">{{item?.type}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    </ion-row>
 
-  <ion-button class="opemodal" (click)="openModal()">Add device</ion-button>
+    <ion-row>
+      <div class="device-btn">
+        <ion-button shape="round" size="small" id="open-modal" expand="block">add a divice</ion-button>
+      </div>
+    </ion-row>
+
+    <ion-modal trigger="open-modal" [initialBreakpoint]="1" [breakpoints]="[0, 1]">
+      <ng-template>
+        <div class="block">
+          <ion-label class="block-title">Enter device information</ion-label>
+          <div class="block-content">
+            <ion-list lines="none">
+
+              <div class="block-input">
+                <ion-label class="list-name">name</ion-label>
+                <ion-item class="list-item">
+                <ion-input placeholder="Enter device name"></ion-input>
+              </ion-item>
+              </div>
+
+              <div class="block-input">
+                <ion-label class="list-name">name</ion-label>
+                <ion-item class="list-item">
+                <ion-input placeholder="Enter device name"></ion-input>
+              </ion-item>
+              </div>
+
+              <div class="block-input">
+                <ion-label class="list-name">name</ion-label>
+                <ion-item class="list-item">
+                <ion-input placeholder="Enter device name"></ion-input>
+              </ion-item>
+              </div>
+
+              <div class="block-input">
+                <ion-label class="list-name">name</ion-label>
+                <ion-item class="list-item">
+                <ion-input placeholder="Enter device name"></ion-input>
+              </ion-item>
+              </div>
+              
+            </ion-list>
+          </div>
+        </div>
+      </ng-template>
+    </ion-modal>
+
+  </form>
+
+  <!-- <ion-button class="opemodal" (click)="openModal()">Add device</ion-button>
 
   <ng-container *ngIf="showModal">
     <ion-header>
@@ -58,12 +110,12 @@
         <ion-button class="opemo"  type="submit">Soumettre</ion-button>
       </form>
     </ion-content>
-  </ng-container>
+  </ng-container> -->
 </ion-content>
 
 
 
-    <!-- <div class="device">
+<!-- <div class="device">
       <h4 class=" mb-3">Enter device information</h4>
 
       <ion-item class="p-0" style="background-color: transparent;">

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ModalController } from '@ionic/angular';
 
 @Component({
@@ -8,31 +9,30 @@ import { ModalController } from '@ionic/angular';
 })
 export class AddPropertyPage implements OnInit {
 
-  selectedOption: any;
-  showModal: boolean = false;
+
 
 
   constructor(private modalController: ModalController) { }
   ngOnInit(): void {
-    // throw new Error('Method not implemented.');
+    
   }
 
-  openModal() {
-    if (this.selectedOption) {
-      this.showModal = true;
-    } else {
-      alert('Please select an option before opening the modal.');
-    }
-  }
+  property_form: FormGroup = new FormGroup({
+    p_name: new FormControl(null, Validators.required),
+    d_name: new FormControl(null, Validators.required),
+    d_amperage: new FormControl(null, Validators.required),
+    d_wattage: new FormControl(null, Validators.required),
+    d_operating_time: new FormControl(null, Validators.required),
+  })
 
-  closeModal() {
-    this.showModal = false;
-  }
+  
 
-  onSubmit() {
-    // Handle form submission here
-    console.log('Form submitted');
-    this.closeModal();
-  }
-
+  type_property= [
+    {type: 'House'},
+    {type: 'Store'},
+    {type: 'Agency'},
+    {type: 'Company'},
+    
+  ]
+  
 }
