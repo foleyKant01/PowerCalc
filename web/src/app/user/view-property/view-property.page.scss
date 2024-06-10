@@ -1,0 +1,134 @@
+.view-PropertyHeader{
+    display: flex;
+    position: relative;
+    left: 28%;
+    margin-top: 35px;
+}
+
+.custom-h5 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.5rem; /* Ajuste la taille de la police ici */
+}
+
+.view-PropertyButtom{
+    position: relative;
+    left: 15%;
+    width: 70%;
+    margin-top: 25px;
+
+    padding: 15px 0px 8px 0px;
+    border-radius: 20px;
+    font-size: 1rem;
+
+    background-color: #ee7d04;
+    // border: 1px solid;
+    // color: white;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    margin-right: 10px;
+  
+    &:hover {
+      background-color: #eecba5;
+    }
+
+}
+
+.title {
+    color: #010101 !important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 5%;
+    font-family: system-ui;
+    size: 5px;
+}
+.chart-container{
+
+.chart-segment   {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    top: 8vh;
+}
+.amount-title {
+    position: relative;
+    top: 11vh;
+    color: #010101 !important;
+    display: flex; 
+    justify-content: center;
+    
+}
+.amount {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 10vh;
+    font-size: 40px;
+    color: #010101 !important;
+}
+
+}
+
+.device-liste {
+    background: #EFF3F4;
+    width: 100%;
+    top: 12vh;
+    position: relative;
+    height: 50vh;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+
+    .label {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        margin-top: 14px;
+        font-size: 20px;
+    }
+    ion-list{
+        background-color: #EFF3F4;
+        margin-top: 20px;
+    }
+    ion-item {
+        --background: #EFF3F4; /* Définir la couleur de fond pour chaque élément de la liste */
+    }
+
+  
+}
+
+.footer_btn {
+    justify-content: center;
+    display: flex;
+  }
+  
+  .back_button {
+    width: 145px;
+    right: 20px;
+    position: relative;
+  }
+  
+  .print_button {
+    width: 145px;
+    left: 20px;
+    position: relative;
+ }
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+  
+.button-container ion-button {
+    margin-bottom: 10px;
+}

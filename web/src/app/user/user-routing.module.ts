@@ -28,9 +28,14 @@ const routes: Routes = [
       path: 'invoice',
       loadChildren: () => import('./invoice/invoice.module').then( m => m.InvoicePageModule)
     },
+    {
+      path: 'view-property',
+      loadChildren: () => import('./view-property/view-property.module').then( m => m.ViewPropertyPageModule)
+    },
+  
   ]
   },
- 
+
   
 ];
 
