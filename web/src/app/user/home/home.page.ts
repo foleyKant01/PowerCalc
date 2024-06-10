@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { PowercalcServiceService } from 'src/app/services/powercalc-service.service';
 
 @Component({
   selector: 'app-home',
@@ -12,28 +11,30 @@ export class HomePage implements OnInit{
   propertys: any[] = []; // Tableau pour stocker les produits
   data: any;
 
-  constructor(private router: Router, private route: ActivatedRoute, private http: PowercalcServiceService
-    ) {  }
+  constructor(private router: Router, private route: ActivatedRoute) {  }
 
   ngOnInit() {
     // this.Readallaroperty()
 
   }
 
-  // Readallaroperty(): void {
-  //   this.http.ReadAllProperty().subscribe({
-  //     next: (response: any) => {
-  //       this.propertys = response || []; // Stocker les produits dans le tableau
-  //       if(response?.products)  {
-  //         this.data = response?.products
-  //         // console.log(this.data)
+  type_property = [
+    {
+      type: 'House'
+    },
+    {
+      type: 'Store'
+    },
+    {
+      type: 'Agency'
+    },
+    {
+      type: 'Company'
+    }
+  ];
 
-  //       }
-  //     },
-  //     error: (error) => {
-  //       console.error('Failed to load products:', error);
-  //     }
-  //   });
-  // }
+  Singleproperty(type: string): void {
+    this.router.navigate(['/user/view-property', type]);
+  }
 
 }

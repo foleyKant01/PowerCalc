@@ -30,18 +30,14 @@ const routes: Routes = [
       loadChildren: () => import('./invoice/invoice.module').then( m => m.InvoicePageModule)
     },
     {
-      path: 'view-property',
+      path: 'view-property/:type',
       loadChildren: () => import('./view-property/view-property.module').then( m => m.ViewPropertyPageModule)
     },
-  
+
   ]
   },
 
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> efca7ad24b4e8deb0707b8ebefb4594c95006e82
 ];
 
 @NgModule({

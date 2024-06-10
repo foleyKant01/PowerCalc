@@ -4,79 +4,134 @@
   </ion-toolbar>
 </ion-header>
 
-
-<ion-content>
-    <div class="view-PropertyHeader">
-      <h2 class="custom-h5">View-Property</h2>
-    </div>
-
-    <div class="view-PropertyButtom">
-      <h5 shape="round" expand="block">HOME</h5>
-    </div>
-
-    <ion-row class="">
-      <div class="device-liste">
-        <ion-label class="label">Device list</ion-label>
-        <ion-list lines="none">
-          <ion-item>
-            <ion-label>Total Device:</ion-label>
-            <ion-label slot="end">5</ion-label>
-          </ion-item>
-
-          <ion-item>
-            <ion-label>Television:</ion-label>
-            <ion-label slot="end">3000f</ion-label>
-          </ion-item>
-
-          <ion-item>
-            <ion-label>Refrigerator:</ion-label>
-            <ion-label slot="end">5000f</ion-label>
-          </ion-item>
-
-          <ion-item>
-            <ion-label>Microwave:</ion-label>
-            <ion-label slot="end">3000f</ion-label>
-          </ion-item>
-
-          <ion-item>
-            <ion-label>Air Conditioner:</ion-label>
-            <ion-label slot="end">5000f</ion-label>
-          </ion-item>
-
-          <ion-item>
-            <ion-label>High Heater:</ion-label>
-            <ion-label slot="end">5000f</ion-label>
-          </ion-item>
-        </ion-list>
-
-        <div class="button-container">
-          <ion-button expand="block" color="primary">Add Invoice</ion-button>
-          <ion-button expand="block" color="secondary">Generate Invoice</ion-button>
-        </div>
-
+<ion-content *ngIf="house">
+  <div class="view-PropertyHeader">
+    <h2 class="custom-h5">View-Property</h2>
+  </div>
+  <div class="view-PropertyButtom">
+    <h5 shape="round" expand="block">{{propertyType}}</h5>
+  </div>
+  <ion-row class="">
+    <div class="device-liste">
+      <ion-label class="label">Device list</ion-label>
+       <ion-list lines="none" *ngFor="let item of house">
+        <ion-item>
+          <ion-label>Total Device:</ion-label>
+          <ion-label slot="end">{{house?.length}}</ion-label>
+        </ion-item>
+        <ion-item class="p-0 m-0">
+          <ion-label class="p-0 m-0">{{item.de_name}}</ion-label>
+          <ion-button >
+            <ion-icon class="p-1" id="edit" name="pencil" aria-label="edit"></ion-icon>
+          </ion-button>
+          <ion-button >
+            <ion-icon class="p-1" id="trash" name="trash" aria-label="trash"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-list>
+      <div class="button-container">
+        <ion-button expand="block" color="primary">Add Invoice</ion-button>
+        <ion-button expand="block" color="secondary">Generate Invoice</ion-button>
       </div>
-    </ion-row>
-
-
+    </div>
+  </ion-row>
 </ion-content>
 
+<ion-content *ngIf="store">
+  <div class="view-PropertyHeader">
+    <h2 class="custom-h5">View-Property</h2>
+  </div>
+  <div class="view-PropertyButtom">
+    <h5 shape="round" expand="block">{{propertyType}}</h5>
+  </div>
+  <ion-row class="">
+    <div class="device-liste">
+      <ion-label class="label">Device list</ion-label>
+       <ion-list lines="none" *ngFor="let item of store">
+        <ion-item>
+          <ion-label>Total Device:</ion-label>
+          <ion-label slot="end">{{store?.length}}</ion-label>
+        </ion-item>
+        <ion-item class="p-0 m-0">
+          <ion-label class="p-0 m-0">{{item.de_name}}</ion-label>
+          <ion-button >
+            <ion-icon class="p-1" id="edit" name="pencil" aria-label="edit"></ion-icon>
+          </ion-button>
+          <ion-button >
+            <ion-icon class="p-1" id="trash" name="trash" aria-label="trash"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-list>
+      <div class="button-container">
+        <ion-button expand="block" color="primary">Add Invoice</ion-button>
+        <ion-button expand="block" color="secondary">Generate Invoice</ion-button>
+      </div>
+    </div>
+  </ion-row>
+</ion-content>
 
-<!-- <ion-content>
-  <ion-list>
-    <ion-item>
-      <ion-label>
-        <h2>ffffff</h2>
-        <p>fffff</p>
-      </ion-label>
-    </ion-item>
-  </ion-list>
-</ion-content> -->
+<ion-content *ngIf="agency">
+  <div class="view-PropertyHeader">
+    <h2 class="custom-h5">View-Property</h2>
+  </div>
+  <div class="view-PropertyButtom">
+    <h5 shape="round" expand="block">{{propertyType}}</h5>
+  </div>
+  <ion-row class="">
+    <div class="device-liste">
+      <ion-label class="label">Device list</ion-label>
+       <ion-list lines="none" *ngFor="let item of agency">
+        <ion-item>
+          <ion-label>Total Device:</ion-label>
+          <ion-label slot="end">{{agency?.length}}</ion-label>
+        </ion-item>
+        <ion-item class="p-0 m-0">
+          <ion-label class="p-0 m-0">{{item.de_name}}</ion-label>
+          <ion-button >
+            <ion-icon class="p-1" id="edit" name="pencil" aria-label="edit"></ion-icon>
+          </ion-button>
+          <ion-button >
+            <ion-icon class="p-1" id="trash" name="trash" aria-label="trash"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-list>
+      <div class="button-container">
+        <ion-button expand="block" color="primary">Add Invoice</ion-button>
+        <ion-button expand="block" color="secondary">Generate Invoice</ion-button>
+      </div>
+    </div>
+  </ion-row>
+</ion-content>
 
-
-<!-- <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">view-property</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content> -->
+<ion-content *ngIf="company">
+  <div class="view-PropertyHeader">
+    <h2 class="custom-h5">View-Property</h2>
+  </div>
+  <div class="view-PropertyButtom">
+    <h5 shape="round" expand="block">{{propertyType}}</h5>
+  </div>
+  <ion-row class="">
+    <div class="device-liste" >
+      <ion-label class="label">Device list</ion-label>
+      <ion-list lines="none" *ngFor="let item of company">
+        <ion-item>
+          <ion-label>Total Device:</ion-label>
+          <ion-label slot="end">{{company?.length}}</ion-label>
+        </ion-item>
+        <ion-item class="p-0 m-0">
+          <ion-label class="p-0 m-0">{{item.de_name}}</ion-label>
+          <ion-button >
+            <ion-icon class="p-1" id="edit" name="pencil" aria-label="edit"></ion-icon>
+          </ion-button>
+          <ion-button >
+            <ion-icon class="p-1" id="trash" name="trash" aria-label="trash"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-list>
+      <div class="button-container">
+        <ion-button expand="block" color="primary">Add Invoice</ion-button>
+        <ion-button expand="block" color="secondary">Generate Invoice</ion-button>
+      </div>
+    </div>
+  </ion-row>
+</ion-content>

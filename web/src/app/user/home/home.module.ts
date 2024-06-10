@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
@@ -15,7 +15,9 @@ import { HeaderPageModule } from '../include/header/header.module';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    HeaderPageModule
+    HeaderPageModule,
+    ReactiveFormsModule
+
   ],
   declarations: [HomePage]
 })

@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { ViewPropertyPageRoutingModule } from './view-property-routing.module';
 
 import { ViewPropertyPage } from './view-property.page';
+import { HeaderPageModule } from '../include/header/header.module';
 
 @NgModule({
   imports: [
