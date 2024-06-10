@@ -4,7 +4,7 @@
   <div class="header">
     <h2><b>Add property</b></h2>
   </div>
-  <form [formGroup]="property_form" >
+  <form [formGroup]="property_form">
     <ion-row>
       <ion-list lines="none" class="property-list">
         <ion-item>
@@ -14,13 +14,13 @@
         </ion-item>
       </ion-list>
     </ion-row>
-  
+
     <ion-row>
       <div class="device-btn">
         <ion-button [disabled]="!selectedProperty" shape="round" size="small" id="open-modal" expand="block">add a device</ion-button>
       </div>
     </ion-row>
-  
+
     <ion-modal trigger="open-modal" [initialBreakpoint]="1" [breakpoints]="[0, 1]">
       <ng-template>
         <div class="block">
@@ -30,7 +30,7 @@
               <div class="block-input">
                 <ion-label class="list-name">Device name</ion-label>
                 <ion-item class="list-item">
-                  <ion-select aria-label="Device Name" interface="action-sheet" placeholder="Select your device" formControlName="d_name" (ionChange)="onDeviceChange($event)">
+                  <ion-select aria-label="Device Name" interface="action-sheet" placeholder="Select your device" formControlName="de_name" (ionChange)="onDeviceChange($event)">
                     <ion-select-option *ngFor="let device of getDevices()" [value]="device.name">{{device?.name}}</ion-select-option>
                   </ion-select>
                 </ion-item>
@@ -38,7 +38,7 @@
               <div class="block-input mb-3">
                 <ion-label class="list-name">Device amperage</ion-label>
                 <ion-item class="list-item">
-                  <ion-select aria-label="Device Amperage" interface="action-sheet" placeholder="Select amperage" formControlName="d_amperage">
+                  <ion-select aria-label="Device Amperage" interface="action-sheet" placeholder="Select amperage" formControlName="de_amperage">
                     <ion-select-option *ngFor="let device of getDevices()" [value]="device.amperage">{{device?.amperage}}</ion-select-option>
                   </ion-select>
                 </ion-item>
@@ -46,20 +46,20 @@
               <div class="block-input mb-3">
                 <ion-label class="list-name">Device wattage</ion-label>
                 <ion-item class="list-item">
-                  <ion-select aria-label="Device Wattage" interface="action-sheet" placeholder="Select wattage" formControlName="d_wattage">
+                  <ion-select aria-label="Device Wattage" interface="action-sheet" placeholder="Select wattage" formControlName="de_wattage">
                     <ion-select-option *ngFor="let device of getDevices()" [value]="device.wattage">{{device?.wattage}}</ion-select-option>
                   </ion-select>
                 </ion-item>
               </div>
               <div class="block-input">
-                <ion-label class="list-name">Device operating time</ion-label>
+                <ion-label class="list-name">Device usage time</ion-label>
                 <ion-item class="list-item">
-                  <ion-input type="text" placeholder="Enter device operating time" formControlName="d_operating_time"></ion-input>
+                  <ion-input type="text" placeholder="Enter device usage time" formControlName="de_usage_time"></ion-input>
                 </ion-item>
               </div>
             </ion-list>
           </div>
-  
+
           <ion-row>
             <div class="add-btn">
               <ion-button expand="block" size="small" shape="round" class="btn" (click)="onSubmit()">Add</ion-button>
@@ -69,10 +69,10 @@
       </ng-template>
     </ion-modal>
   </form>
-  
-  
-  
-  
+
+
+
+
 
   <!-- <ion-button class="opemodal" (click)="openModal()">Add device</ion-button>
 

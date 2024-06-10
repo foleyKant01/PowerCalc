@@ -10,6 +10,7 @@ import { PowercalcServiceService } from 'src/app/services/powercalc-service.serv
 })
 export class LoginPage implements OnInit {
 
+
   ngOnInit() {
   }
 
@@ -28,12 +29,13 @@ export class LoginPage implements OnInit {
     this.http.LoginUser(this.loginuser.value).subscribe({
       next: (reponse:any)=>{
         console.log(reponse);
-        if (reponse.success) {
-          console.log("Redirection vers la page profil");
-          this.router.navigate(['/user',' trouveztout']);
+        if (reponse.status === "success") {
+          console.log("Redirection vers la page home");
+          this.router.navigate(['/user','home']);
+        } else {
+          console.log("Échec de la connexion, réponse:", reponse);
         }
-      }
+      },
     })
   }
-
 }

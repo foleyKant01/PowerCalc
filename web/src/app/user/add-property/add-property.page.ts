@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AlertController, ModalController } from '@ionic/angular';
+import { PowercalcServiceService } from 'src/app/services/powercalc-service.service';
 
 @Component({
   selector: 'app-add-property',
@@ -10,21 +11,25 @@ import { AlertController, ModalController } from '@ionic/angular';
 })
 export class AddPropertyPage implements OnInit {
 
-  selectedProperty: string | null = null; 
+  selectedProperty: string | null = null;
 
   constructor(private modalController: ModalController,
     private alertController: AlertController,
-    private router: Router
+    private router: Router,
+    private http: PowercalcServiceService
   ) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+  }
+
 
   property_form: FormGroup = new FormGroup({
     p_name: new FormControl(null, Validators.required),
-    d_name: new FormControl(null, Validators.required),
-    d_amperage: new FormControl(null, Validators.required),
-    d_wattage: new FormControl(null, Validators.required),
-    d_operating_time: new FormControl(null, Validators.required),
+    de_name: new FormControl(null, Validators.required),
+    de_amperage: new FormControl(null, Validators.required),
+    de_wattage: new FormControl(null, Validators.required),
+    de_usage_time: new FormControl(null, Validators.required),
   });
 
   type_property = [
@@ -127,16 +132,17 @@ export class AddPropertyPage implements OnInit {
       ]
     }
   ];
-  
+
   onPropertyChange(event: any) {
     this.selectedProperty = event?.detail?.value;
     this.property_form.controls['p_name'].setValue(this.selectedProperty);
-    this.property_form.controls['d_name'].reset();
-    this.property_form.controls['d_amperage'].reset();
-    this.property_form.controls['d_wattage'].reset();
+    this.property_form.controls['de_name'].reset();
+    this.property_form.controls['de_amperage'].reset();
+    this.property_form.controls['de_wattage'].reset();
   }
-  
+
   onDeviceChange(event: any) {
+
     const selectedDeviceName = event?.detail?.value;
     const property = this.type_property.find(
       (p) => p.type === this.selectedProperty
@@ -144,20 +150,22 @@ export class AddPropertyPage implements OnInit {
     const selectedDevice = property?.devices.find(
       (device) => device?.name === selectedDeviceName
     );
-  
+
     if (selectedDevice) {
-      this.property_form.controls['d_amperage'].setValue(selectedDevice?.amperage);
-      this.property_form.controls['d_wattage'].setValue(selectedDevice?.wattage);
+      this.property_form.controls['de_amperage'].setValue(selectedDevice?.amperage);
+      this.property_form.controls['de_wattage'].setValue(selectedDevice?.wattage);
     }
   }
-  
+
   getDevices(): any[] {
     const property = this.type_property.find(
       (p) => p.type === this.selectedProperty
     );
     return property ? property.devices : [];
   }
+
   async onSubmit() {
+
     console.log(this.property_form.value);
 
     const alert = await this.alertController.create({
@@ -175,14 +183,99 @@ export class AddPropertyPage implements OnInit {
         {
           text: 'OK',
           handler: () => {
-            console.log('Form submitted');
-            this.modalController.dismiss(); 
-            this.router.navigate(['/user/add-property']);
+            if(this.selectedProperty === 'Store'){
+              this.Adddevicestore()
+              console.log('Form submitted');
+              this.modalController.dismiss();
+              this.router.navigate(['/user/add-property']);
+            }
+            if(this.selectedProperty === 'House'){
+              this.Adddevicehouse()
+              console.log('Form submitted');
+              this.modalController.dismiss();
+              this.router.navigate(['/user/add-property']);
+            }
+            if(this.selectedProperty === 'Agency'){
+              this.Adddeviceagency()
+              console.log('Form submitted');
+              this.modalController.dismiss();
+              this.router.navigate(['/user/add-property']);
+            }
+            if(this.selectedProperty === 'Company'){
+              this.Adddevicecompany()
+              console.log('Form submitted');
+              this.modalController.dismiss();
+              this.router.navigate(['/user/add-property']);
+            }
+
           }
         }
       ]
     });
 
     await alert.present();
+  }
+
+
+  Adddevicestore(){
+    this.http.AddDeviceStore(this.property_form.value).subscribe({
+      next: (reponse:any)=>{
+        console.log("OK");
+        console.log(this.selectedProperty)
+        console.log(reponse);
+        // if (reponse.status === "success") {
+        //   console.log("Redirection vers la page home");
+        //   this.router.navigate(['/auth','success']);
+        // } else {
+        //   console.log("Échec de la connexion, réponse:", reponse);
+        // }
+      }
+    })
+  }
+
+  Adddevicehouse(){
+    this.http.AddDeviceHouse(this.property_form.value).subscribe({
+      next: (reponse:any)=>{
+        console.log("OK");
+        console.log(this.selectedProperty)
+        console.log(reponse);
+        // if (reponse.status === "success") {
+        //   console.log("Redirection vers la page home");
+        //   this.router.navigate(['/auth','success']);
+        // } else {
+        //   console.log("Échec de la connexion, réponse:", reponse);
+        // }
+      }
+    })
+  }
+  Adddeviceagency(){
+    this.http.AddDeviceAgency(this.property_form.value).subscribe({
+      next: (reponse:any)=>{
+        console.log("OK");
+        console.log(this.selectedProperty)
+        console.log(reponse);
+        // if (reponse.status === "success") {
+        //   console.log("Redirection vers la page home");
+        //   this.router.navigate(['/auth','success']);
+        // } else {
+        //   console.log("Échec de la connexion, réponse:", reponse);
+        // }
+      }
+    })
+  }
+  Adddevicecompany(){
+    this.http.AddDeviceCompany(this.property_form.value).subscribe({
+      next: (reponse:any)=>{
+        console.log("OK");
+        console.log(this.selectedProperty)
+        console.log(reponse);
+        // if (reponse.status === "success") {
+        //   console.log("Redirection vers la page home");
+        //   this.router.navigate(['/auth','success']);
+        // } else {
+        //   console.log("Échec de la connexion, réponse:", reponse);
+        // }
+      }
+    })
   }
 }

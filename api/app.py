@@ -39,6 +39,7 @@ def home():
     return render_template('index.html')
 
 api.add_resource(UserApi, '/api/user/<string:route>', endpoint='all_user', methods=['GET', 'POST', 'DELETE', 'PATCH'])
+api.add_resource(PropertyApi, '/api/property/<string:route>', endpoint='all_property', methods=['GET', 'POST', 'DELETE', 'PATCH'])
 # api.add_resource(ProductsApi, '/api/products/<string:route>', endpoint='all_products', methods=['GET', 'POST', 'DELETE', 'PATCH'])
 
 if __name__ == '__main__':

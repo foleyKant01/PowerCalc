@@ -29,7 +29,7 @@
 
 .form-container {
     position: relative;
-    height: 80vh;
+    height: auto;
     bottom: 63px;
     right: 24px;
     background-color: #fff;
@@ -83,10 +83,10 @@ ion-input {
     color: #000;
 }
 
-.name-label, .email-label, .password-label, .birth-label {
-    margin: 15px; 
+.label{
+    margin: 15px 0px 5px 0px;
     display: flex;
-    width: auto;   
+    width: auto;
     // display:contents;
 }
 

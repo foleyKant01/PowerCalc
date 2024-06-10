@@ -1,101 +1,67 @@
-<!-- <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>register</ion-title>
-  </ion-toolbar>
-</ion-header> -->
-
 <ion-content class="ion-padding content">
   <div class="img-content">
-      <!-- <ion-thumbnail class="cie-img">
-          <img alt="" src="assets/img/CIE-logo.jpeg" />
-      </ion-thumbnail> -->
-      <ion-img class="login-img" src="assets/img/log_backgroung.jpeg"
-          alt="">
-      </ion-img>
-      <div class="cie-overlay">
-          <ion-thumbnail class="cie-img">
-              <img alt="" src="assets/img/CIE-logo.jpeg" />
-          </ion-thumbnail>
-      </div>
-
+    <ion-img class="login-img" src="assets/img/log_backgroung.jpeg"alt=""></ion-img>
+    <div class="cie-overlay">
+      <ion-thumbnail class="cie-img">
+        <img alt="" src="assets/img/CIE-logo.jpeg" />
+      </ion-thumbnail>
+    </div>
   </div>
-  <!-- <div class="img-content">
-      <ion-img class="cie-img" src="assets/img/CIE-logo.jpeg"
-      alt="">
-      </ion-img>
-  </div> -->
-
   <div class="form-container">
-      <ion-row>
-          <ion-label class="ion-text-center login-title h2" id="h2-register"><strong>Register</strong></ion-label>
-      </ion-row>
-
-      <ion-row>
-          <small class="register-small">Sign up to continue</small>
-      </ion-row>
-
-      <form class="login-form" method="" action="">
-          <div class="section">
-              <ion-label class="name-label">Name</ion-label>
-              <ion-item lines="none" class="input-items">
-                  <ion-input labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter your full name">
-                  </ion-input>
-              </ion-item>
-          </div>
-
-          <div class="section">
-            <ion-label class="name-label">Username</ion-label>
-            <ion-item lines="none" class="input-items">
-                <ion-input labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter your Username">
-                </ion-input>
-            </ion-item>
-        </div>
-
-        <div class="section">
-            <ion-label class="name-label">mobile</ion-label>
-            <ion-item lines="none" class="input-items">
-                <ion-input labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter your phone address">
-                </ion-input>
-            </ion-item>
-        </div>
-
-        <div class="section">
-            <ion-label class="email-label">address</ion-label>
-            <ion-item lines="none" class="input-items">
-                <ion-input labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter your location">
-                </ion-input>
-            </ion-item>
-        </div>
-
-        <div class="section">
-            <ion-label class="email-label">Email</ion-label>
-            <ion-item lines="none" class="input-items">
-                <ion-input labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter your email address">
-                </ion-input>
-            </ion-item>
-        </div>
-
-
-          <div class="section">
-              <ion-label class="password-label">Password</ion-label>
-              <ion-item lines="none" class="input-items">
-                  <ion-input labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter password">
-                  </ion-input>
-              </ion-item>
-          </div>
-
-          <ion-button class="register-button"  expand="block">Submit</ion-button>
-
-          <div class="section center-content">
-            <ion-label class="have-account">Already have an account!</ion-label>
-            <a href="#" class="signin-link">Sign In</a>
-          </div>
-        
-          <!-- <ion-row class="register-small-connected">
-           
-          </ion-row> -->
-
-      </form>
+    <ion-row>
+      <ion-label class="ion-text-center login-title h2" id="h2-register"><strong>Register</strong></ion-label>
+    </ion-row>
+    <ion-row>
+      <small class="register-small">Sign up to continue</small>
+    </ion-row>
+    <form class="login-form" [formGroup]="createuser" (submit)="Createuser()">
+      <div class="section">
+        <ion-label for="fullname" class="label">Fullname</ion-label>
+        <ion-item lines="none" class="input-items">
+          <ion-input formControlName="fullname" name="fullname" labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter your full name">
+          </ion-input>
+        </ion-item>
+      </div>
+      <div class="section">
+        <ion-label for="username" class="label">Username</ion-label>
+        <ion-item lines="none" class="input-items">
+          <ion-input formControlName="username" name="username" labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter your Username">
+          </ion-input>
+        </ion-item>
+      </div>
+      <div class="section">
+        <ion-label for="mobile" class="label">Mobile</ion-label>
+        <ion-item lines="none" class="input-items">
+          <ion-input formControlName="mobile" name="mobile" labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter your phone address">
+          </ion-input>
+        </ion-item>
+      </div>
+      <div class="section">
+        <ion-label for="address" class="label">Address</ion-label>
+        <ion-item lines="none" class="input-items">
+          <ion-input formControlName="address" name="address" labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter your location">
+          </ion-input>
+        </ion-item>
+      </div>
+      <div class="section">
+        <ion-label for="email" class="label">Email</ion-label>
+        <ion-item lines="none" class="input-items">
+          <ion-input formControlName="email" name="email" labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter your email address">
+          </ion-input>
+        </ion-item>
+      </div>
+      <div class="section">
+        <ion-label for="password" class="label">Password</ion-label>
+        <ion-item lines="none" class="input-items">
+          <ion-input formControlName="password" name="password" labelPlacement="stacked" [clearOnEdit]="true" placeholder="Enter password">
+          </ion-input>
+        </ion-item>
+      </div>
+      <ion-button type="submit" class="register-button"  expand="block">Submit</ion-button>
+      <div class="section center-content">
+        <ion-label class="have-account">Already have an account!</ion-label>
+        <a routerLink="/auth/login" class="signin-link">Sign In</a>
+      </div>
+    </form>
   </div>
-
 </ion-content>
