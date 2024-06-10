@@ -34,7 +34,7 @@ def CreateUser():
         db.session.add(new_admin)
         db.session.commit()
 
-        reponse['status'] = 'Succes'
+        reponse['status'] = 'success'
 
     except Exception as e:
         reponse['error_description'] = str(e)
@@ -62,7 +62,7 @@ def LoginUser():
 
             reponse['status'] = 'success'
             reponse['message'] = 'Login successful'
-            reponse['access_token'] = access_token
+            # reponse['access_token'] = access_token
 
         else:
             reponse['status'] = 'error'

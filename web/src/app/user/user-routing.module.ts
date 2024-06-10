@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { UserPage } from './user.page';
+import { HomePage } from './home/home.page';
 
 
 const routes: Routes = [
@@ -36,7 +37,11 @@ const routes: Routes = [
   ]
   },
 
+<<<<<<< HEAD
+
+=======
   
+>>>>>>> efca7ad24b4e8deb0707b8ebefb4594c95006e82
 ];
 
 @NgModule({
