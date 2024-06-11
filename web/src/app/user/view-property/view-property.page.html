@@ -30,8 +30,8 @@
         </ion-item>
       </ion-list>
       <div class="button-container">
-        <ion-button expand="block" color="primary">Add Invoice</ion-button>
-        <ion-button expand="block" color="secondary">Generate Invoice</ion-button>
+        <ion-button (click)="Adddevicehouse(house)" expand="block" color="primary">Add Invoice</ion-button>
+        <ion-button (click)="Singlehouseproperty(house)" expand="block" color="secondary">Generate Invoice</ion-button>
       </div>
     </div>
   </ion-row>
@@ -63,8 +63,8 @@
         </ion-item>
       </ion-list>
       <div class="button-container">
-        <ion-button expand="block" color="primary">Add Invoice</ion-button>
-        <ion-button (click)="Singleproperty(store)" expand="block" color="secondary">Generate Invoice</ion-button>
+        <ion-button (click)="Adddevicestore(store)"  expand="block" color="primary">Add Invoice</ion-button>
+        <ion-button (click)="Singlestoreproperty(store)" expand="block" color="secondary">Generate Invoice</ion-button>
       </div>
     </div>
   </ion-row>
@@ -96,8 +96,8 @@
         </ion-item>
       </ion-list>
       <div class="button-container">
-        <ion-button expand="block" color="primary">Add Invoice</ion-button>
-        <ion-button expand="block" color="secondary">Generate Invoice</ion-button>
+        <ion-button (click)="Adddeviceagency(agency)" expand="block" color="primary">Add Invoice</ion-button>
+        <ion-button (click)="Singleagencyproperty(agency)" expand="block" color="secondary">Generate Invoice</ion-button>
       </div>
     </div>
   </ion-row>
@@ -129,8 +129,8 @@
         </ion-item>
       </ion-list>
       <div class="button-container">
-        <ion-button expand="block" color="primary">Add Invoice</ion-button>
-        <ion-button routerLink="/user/invoice" expand="block" color="secondary">Generate Invoice</ion-button>
+        <ion-button (click)="Adddevicecompany(company)" expand="block" color="primary">Add Invoice</ion-button>
+        <ion-button (click)="Singlecompanyproperty(company)" expand="block" color="secondary">Generate Invoice</ion-button>
       </div>
     </div>
   </ion-row>

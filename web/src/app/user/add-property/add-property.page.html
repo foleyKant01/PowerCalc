@@ -39,7 +39,7 @@
                 <ion-label class="list-name">Device amperage</ion-label>
                 <ion-item class="list-item">
                   <ion-select aria-label="Device Amperage" interface="action-sheet" placeholder="Select amperage" formControlName="de_amperage">
-                    <ion-select-option *ngFor="let device of getDevices()" [value]="device.amperage">{{device?.amperage}}</ion-select-option>
+                    <ion-select-option *ngFor="let device of getDevices()" [value]="device.amperage">{{device?.amperage}}A</ion-select-option>
                   </ion-select>
                 </ion-item>
               </div>
@@ -47,7 +47,7 @@
                 <ion-label class="list-name">Device wattage</ion-label>
                 <ion-item class="list-item">
                   <ion-select aria-label="Device Wattage" interface="action-sheet" placeholder="Select wattage" formControlName="de_wattage">
-                    <ion-select-option *ngFor="let device of getDevices()" [value]="device.wattage">{{device?.wattage}}</ion-select-option>
+                    <ion-select-option *ngFor="let device of getDevices()" [value]="device.wattage">{{device?.wattage}}W</ion-select-option>
                   </ion-select>
                 </ion-item>
               </div>

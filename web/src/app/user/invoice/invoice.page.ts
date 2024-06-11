@@ -47,8 +47,10 @@ export class InvoicePage implements OnInit {
   Houseproperty(): void {
     this.http.AllHouseDevice().subscribe({
       next: (response: any) => {
-        this.house = response?.devices;
-        console.log(this.house)
+        this.total_invoice = response?.total_invoice;
+        console.log(this.total_invoice)
+        this.devices_info = response?.devices_info;
+        console.log(this.devices_info)
       },
       error: (error) => {
         console.error('Failed to load products:', error);
@@ -73,8 +75,10 @@ export class InvoicePage implements OnInit {
   Agencyproperty(): void {
     this.http.AllAgencyDevice().subscribe({
       next: (response: any) => {
-        this.agency = response?.devices;
-        console.log(this.agency)
+        this.total_invoice = response?.total_invoice;
+        console.log(this.total_invoice)
+        this.devices_info = response?.devices_info;
+        console.log(this.devices_info)
       },
       error: (error) => {
         console.error('Failed to load products:', error);
@@ -85,8 +89,10 @@ export class InvoicePage implements OnInit {
   Companyproperty(): void {
     this.http.AllCompanyDevice().subscribe({
       next: (response: any) => {
-        this.company = response?.devices;
-        console.log(this.company)
+        this.total_invoice = response?.total_invoice;
+        console.log(this.total_invoice)
+        this.devices_info = response?.devices_info;
+        console.log(this.devices_info)
       },
       error: (error) => {
         console.error('Failed to load products:', error);

@@ -37,99 +37,99 @@ export class AddPropertyPage implements OnInit {
     {
       "type": "House",
       "devices": [
-        {"name": "Refrigerator", "amperage": "1.5A", "wattage": "150W"},
-        {"name": "Freezer", "amperage": "1.0A", "wattage": "100W"},
-        {"name": "Oven", "amperage": "10.0A", "wattage": "2000W"},
-        {"name": "Microwave", "amperage": "5.0A", "wattage": "1000W"},
-        {"name": "Electric stove", "amperage": "15.0A", "wattage": "3000W"},
-        {"name": "Extractor hood", "amperage": "0.5A", "wattage": "75W"},
-        {"name": "Dishwasher", "amperage": "10.0A", "wattage": "1800W"},
-        {"name": "Washing machine", "amperage": "10.0A", "wattage": "2000W"},
-        {"name": "Dryer", "amperage": "15.0A", "wattage": "3000W"},
-        {"name": "Television", "amperage": "0.5A", "wattage": "120W"},
-        {"name": "DVD/Blu-ray player", "amperage": "0.2A", "wattage": "20W"},
-        {"name": "Game console", "amperage": "0.8A", "wattage": "90W"},
-        {"name": "Desktop computer", "amperage": "1.0A", "wattage": "300W"},
-        {"name": "Laptop", "amperage": "0.5A", "wattage": "65W"},
-        {"name": "Router/modem", "amperage": "0.2A", "wattage": "10W"},
-        {"name": "Electric heating system", "amperage": "20.0A", "wattage": "4000W"},
-        {"name": "Air conditioning", "amperage": "15.0A", "wattage": "3500W"},
-        {"name": "Fan", "amperage": "0.5A", "wattage": "50W"},
-        {"name": "Lighting (lamps, chandeliers, bulbs)", "amperage": "0.1A", "wattage": "60W"},
-        {"name": "Vacuum cleaner", "amperage": "5.0A", "wattage": "1000W"},
-        {"name": "Iron", "amperage": "10.0A", "wattage": "2000W"},
-        {"name": "Coffee machine", "amperage": "5.0A", "wattage": "1000W"},
-        {"name": "Toaster", "amperage": "7.5A", "wattage": "1500W"},
-        {"name": "Blender", "amperage": "3.0A", "wattage": "600W"},
-        {"name": "Food processor", "amperage": "3.0A", "wattage": "600W"},
-        {"name": "Electric kettle", "amperage": "10.0A", "wattage": "2000W"},
-        {"name": "Water heater", "amperage": "15.0A", "wattage": "3000W"},
-        {"name": "Hair dryer", "amperage": "10.0A", "wattage": "2000W"},
-        {"name": "Electric shaver", "amperage": "0.2A", "wattage": "10W"},
-        {"name": "Electric toothbrushes", "amperage": "0.1A", "wattage": "5W"}
+        {"name": "Refrigerator", "amperage": "1.5", "wattage": "150"},
+        {"name": "Freezer", "amperage": "1.0", "wattage": "100"},
+        {"name": "Oven", "amperage": "10.0", "wattage": "2000"},
+        {"name": "Microwave", "amperage": "5.0", "wattage": "1000"},
+        {"name": "Electric stove", "amperage": "15.0", "wattage": "3000"},
+        {"name": "Extractor hood", "amperage": "0.5", "wattage": "75"},
+        {"name": "Dishwasher", "amperage": "10.0", "wattage": "1800"},
+        {"name": "Washing machine", "amperage": "10.0", "wattage": "2000"},
+        {"name": "Dryer", "amperage": "15.0", "wattage": "3000"},
+        {"name": "Television", "amperage": "0.5", "wattage": "120"},
+        {"name": "DVD/Blu-ray player", "amperage": "0.2", "wattage": "20"},
+        {"name": "Game console", "amperage": "0.8", "wattage": "90"},
+        {"name": "Desktop computer", "amperage": "1.0", "wattage": "300"},
+        {"name": "Laptop", "amperage": "0.5", "wattage": "65"},
+        {"name": "Router/modem", "amperage": "0.2", "wattage": "10"},
+        {"name": "Electric heating system", "amperage": "20.0", "wattage": "4000"},
+        {"name": "Air conditioning", "amperage": "15.0", "wattage": "3500"},
+        {"name": "Fan", "amperage": "0.5", "wattage": "50"},
+        {"name": "Lighting (lamps, chandeliers, bulbs)", "amperage": "0.1", "wattage": "60"},
+        {"name": "Vacuum cleaner", "amperage": "5.0", "wattage": "1000"},
+        {"name": "Iron", "amperage": "10.0", "wattage": "2000"},
+        {"name": "Coffee machine", "amperage": "5.0", "wattage": "1000"},
+        {"name": "Toaster", "amperage": "7.5", "wattage": "1500"},
+        {"name": "Blender", "amperage": "3.0", "wattage": "600"},
+        {"name": "Food processor", "amperage": "3.0", "wattage": "600"},
+        {"name": "Electric kettle", "amperage": "10.0", "wattage": "2000"},
+        {"name": "Water heater", "amperage": "15.0", "wattage": "3000"},
+        {"name": "Hair dryer", "amperage": "10.0", "wattage": "2000"},
+        {"name": "Electric shaver", "amperage": "0.2", "wattage": "10"},
+        {"name": "Electric toothbrushes", "amperage": "0.1", "wattage": "5"}
       ]
     },
     {
       "type": "Store",
       "devices": [
-        {"name": "Lighting (ceiling lights, spotlights, neon lights)", "amperage": "1.0A", "wattage": "100W"},
-        {"name": "Display refrigerators", "amperage": "2.0A", "wattage": "200W"},
-        {"name": "Display freezers", "amperage": "2.0A", "wattage": "200W"},
-        {"name": "Cash registers", "amperage": "0.5A", "wattage": "50W"},
-        {"name": "POS computers", "amperage": "1.0A", "wattage": "150W"},
-        {"name": "Barcode scanners", "amperage": "0.2A", "wattage": "10W"},
-        {"name": "Electric labelers", "amperage": "0.5A", "wattage": "30W"},
-        {"name": "Electronic scales", "amperage": "0.5A", "wattage": "30W"},
-        {"name": "Air conditioning/heating", "amperage": "10.0A", "wattage": "2000W"},
-        {"name": "Surveillance systems (cameras, screens)", "amperage": "1.0A", "wattage": "100W"},
-        {"name": "Audio systems (speakers, amplifiers)", "amperage": "1.0A", "wattage": "100W"},
-        {"name": "Credit card machines", "amperage": "0.5A", "wattage": "30W"},
-        {"name": "Display televisions", "amperage": "1.0A", "wattage": "150W"},
-        {"name": "Coffee machines", "amperage": "5.0A", "wattage": "1000W"}
+        {"name": "Lighting (ceiling lights, spotlights, neon lights)", "amperage": "1.0", "wattage": "100"},
+        {"name": "Display refrigerators", "amperage": "2.0", "wattage": "200"},
+        {"name": "Display freezers", "amperage": "2.0", "wattage": "200"},
+        {"name": "Cash registers", "amperage": "0.5", "wattage": "50"},
+        {"name": "POS computers", "amperage": "1.0", "wattage": "150"},
+        {"name": "Barcode scanners", "amperage": "0.2", "wattage": "10"},
+        {"name": "Electric labelers", "amperage": "0.5", "wattage": "30"},
+        {"name": "Electronic scales", "amperage": "0.5", "wattage": "30"},
+        {"name": "Air conditioning/heating", "amperage": "10.0", "wattage": "2000"},
+        {"name": "Surveillance systems (cameras, screens)", "amperage": "1.0", "wattage": "100"},
+        {"name": "Audio systems (speakers, amplifiers)", "amperage": "1.0", "wattage": "100"},
+        {"name": "Credit card machines", "amperage": "0.5", "wattage": "30"},
+        {"name": "Display televisions", "amperage": "1.0", "wattage": "150"},
+        {"name": "Coffee machines", "amperage": "5.0", "wattage": "1000"}
       ]
     },
     {
       "type": "Agency",
       "devices": [
-        {"name": "Desktop computers", "amperage": "1.0A", "wattage": "300W"},
-        {"name": "Laptops", "amperage": "0.5A", "wattage": "65W"},
-        {"name": "Printers", "amperage": "2.0A", "wattage": "500W"},
-        {"name": "Photocopiers", "amperage": "2.5A", "wattage": "600W"},
-        {"name": "Scanners", "amperage": "0.5A", "wattage": "50W"},
-        {"name": "Fax machines", "amperage": "1.0A", "wattage": "100W"},
-        {"name": "Routers/modems", "amperage": "0.2A", "wattage": "10W"},
-        {"name": "Landline phones", "amperage": "0.1A", "wattage": "5W"},
-        {"name": "Lighting", "amperage": "1.0A", "wattage": "100W"},
-        {"name": "Air conditioning", "amperage": "10.0A", "wattage": "2000W"},
-        {"name": "Electric heaters", "amperage": "10.0A", "wattage": "2000W"},
-        {"name": "Television or projection screens", "amperage": "1.0A", "wattage": "150W"},
-        {"name": "Videoconference systems", "amperage": "1.0A", "wattage": "100W"},
-        {"name": "Coffee machines", "amperage": "5.0A", "wattage": "1000W"},
-        {"name": "Electric kettles", "amperage": "10.0A", "wattage": "2000W"},
-        {"name": "Fans", "amperage": "1.0A", "wattage": "50W"},
-        {"name": "Security systems (cameras, alarms)", "amperage": "1.0A", "wattage": "100W"}
+        {"name": "Desktop computers", "amperage": "1.0", "wattage": "300"},
+        {"name": "Laptops", "amperage": "0.5", "wattage": "65"},
+        {"name": "Printers", "amperage": "2.0", "wattage": "500"},
+        {"name": "Photocopiers", "amperage": "2.5", "wattage": "600"},
+        {"name": "Scanners", "amperage": "0.5", "wattage": "50"},
+        {"name": "Fax machines", "amperage": "1.0", "wattage": "100"},
+        {"name": "Routers/modems", "amperage": "0.2", "wattage": "10"},
+        {"name": "Landline phones", "amperage": "0.1", "wattage": "5"},
+        {"name": "Lighting", "amperage": "1.0", "wattage": "100"},
+        {"name": "Air conditioning", "amperage": "10.0", "wattage": "2000"},
+        {"name": "Electric heaters", "amperage": "10.0", "wattage": "2000"},
+        {"name": "Television or projection screens", "amperage": "1.0", "wattage": "150"},
+        {"name": "Videoconference systems", "amperage": "1.0", "wattage": "100"},
+        {"name": "Coffee machines", "amperage": "5.0", "wattage": "1000"},
+        {"name": "Electric kettles", "amperage": "10.0", "wattage": "2000"},
+        {"name": "Fans", "amperage": "1.0", "wattage": "50"},
+        {"name": "Security systems (cameras, alarms)", "amperage": "1.0", "wattage": "100"}
       ]
     },
     {
       "type": "Company",
       "devices": [
-        {"name": "Computer servers", "amperage": "5.0A", "wattage": "1000W"},
-        {"name": "Data storage systems", "amperage": "3.0A", "wattage": "600W"},
-        {"name": "Communication networks", "amperage": "2.0A", "wattage": "400W"},
-        {"name": "Desktop and laptop computers", "amperage": "1.0A", "wattage": "300W"},
-        {"name": "Network equipment (routers, switches)", "amperage": "1.0A", "wattage": "100W"},
-        {"name": "Printers and copiers", "amperage": "2.5A", "wattage": "600W"},
-        {"name": "Telecommunication equipment", "amperage": "1.5A", "wattage": "300W"},
-        {"name": "Lighting", "amperage": "1.0A", "wattage": "100W"},
-        {"name": "HVAC systems", "amperage": "15.0A", "wattage": "3000W"},
-        {"name": "Video conferencing systems", "amperage": "2.0A", "wattage": "400W"},
-        {"name": "Security systems", "amperage": "1.0A", "wattage": "100W"},
-        {"name": "Audio/visual equipment", "amperage": "1.0A", "wattage": "200W"},
-        {"name": "Coffee machines", "amperage": "5.0A", "wattage": "1000W"},
-        {"name": "Electric kettles", "amperage": "10.0A", "wattage": "2000W"},
-        {"name": "Refrigerators", "amperage": "1.5A", "wattage": "150W"},
-        {"name": "Microwaves", "amperage": "5.0A", "wattage": "1000W"},
-        {"name": "Dishwashers", "amperage": "10.0A", "wattage": "1800W"}
+        {"name": "Computer servers", "amperage": "5.0", "wattage": "1000"},
+        {"name": "Data storage systems", "amperage": "3.0", "wattage": "600"},
+        {"name": "Communication networks", "amperage": "2.0", "wattage": "400"},
+        {"name": "Desktop and laptop computers", "amperage": "1.0", "wattage": "300"},
+        {"name": "Network equipment (routers, switches)", "amperage": "1.0", "wattage": "100"},
+        {"name": "Printers and copiers", "amperage": "2.5", "wattage": "600"},
+        {"name": "Telecommunication equipment", "amperage": "1.5", "wattage": "300"},
+        {"name": "Lighting", "amperage": "1.0", "wattage": "100"},
+        {"name": "HVAC systems", "amperage": "15.0", "wattage": "3000"},
+        {"name": "Video conferencing systems", "amperage": "2.0", "wattage": "400"},
+        {"name": "Security systems", "amperage": "1.0", "wattage": "100"},
+        {"name": "Audio/visual equipment", "amperage": "1.0", "wattage": "200"},
+        {"name": "Coffee machines", "amperage": "5.0", "wattage": "1000"},
+        {"name": "Electric kettles", "amperage": "10.0", "wattage": "2000"},
+        {"name": "Refrigerators", "amperage": "1.5", "wattage": "150"},
+        {"name": "Microwaves", "amperage": "5.0", "wattage": "1000"},
+        {"name": "Dishwashers", "amperage": "10.0", "wattage": "1800"}
       ]
     }
   ];
@@ -167,54 +167,71 @@ export class AddPropertyPage implements OnInit {
 
   async onSubmit() {
 
-    console.log(this.property_form.value);
+    if (this.property_form.valid) {
+      console.log(this.property_form.value);
 
-    const alert = await this.alertController.create({
-      header: 'Confirm Submission',
-      message: 'Do you really want to submit the form?',
-      buttons: [
-        {
-          text: 'Cancel',
-          role: 'cancel',
-          cssClass: 'secondary',
-          handler: () => {
-            console.log('Form submission cancelled');
+      const alert = await this.alertController.create({
+        header: 'Confirm Submission',
+        message: 'Do you really want to submit the form?',
+        buttons: [
+          {
+            text: 'Cancel',
+            role: 'cancel',
+            cssClass: 'secondary',
+            handler: () => {
+              console.log('Form submission cancelled');
+            }
+          },
+          {
+            text: 'OK',
+            handler: () => {
+              if(this.selectedProperty === 'Store'){
+                this.Adddevicestore()
+                console.log('Form submitted');
+                this.modalController.dismiss();
+                this.router.navigate(['/user/add-property']);
+              }
+              if(this.selectedProperty === 'House'){
+                this.Adddevicehouse()
+                console.log('Form submitted');
+                this.modalController.dismiss();
+                this.router.navigate(['/user/add-property']);
+              }
+              if(this.selectedProperty === 'Agency'){
+                this.Adddeviceagency()
+                console.log('Form submitted');
+                this.modalController.dismiss();
+                this.router.navigate(['/user/add-property']);
+              }
+              if(this.selectedProperty === 'Company'){
+                this.Adddevicecompany()
+                console.log('Form submitted');
+                this.modalController.dismiss();
+                this.router.navigate(['/user/add-property']);
+              }
+
+            }
           }
-        },
-        {
-          text: 'OK',
-          handler: () => {
-            if(this.selectedProperty === 'Store'){
-              this.Adddevicestore()
-              console.log('Form submitted');
-              this.modalController.dismiss();
-              this.router.navigate(['/user/add-property']);
-            }
-            if(this.selectedProperty === 'House'){
-              this.Adddevicehouse()
-              console.log('Form submitted');
-              this.modalController.dismiss();
-              this.router.navigate(['/user/add-property']);
-            }
-            if(this.selectedProperty === 'Agency'){
-              this.Adddeviceagency()
-              console.log('Form submitted');
-              this.modalController.dismiss();
-              this.router.navigate(['/user/add-property']);
-            }
-            if(this.selectedProperty === 'Company'){
-              this.Adddevicecompany()
-              console.log('Form submitted');
-              this.modalController.dismiss();
-              this.router.navigate(['/user/add-property']);
-            }
+        ]
+      });
+      await alert.present();
+    }
+     else {
+      console.log('Form is incomplete');
+      const alert = await this.alertController.create({
+        header: 'Error',
+        message: 'Please complete all fields',
+        buttons: [
+          {
+            text: 'Ok',
+            role: 'cancel',
+          },
+        ]
+      });
 
-          }
-        }
-      ]
-    });
+      await alert.present();
+    }
 
-    await alert.present();
   }
 
 
@@ -224,13 +241,9 @@ export class AddPropertyPage implements OnInit {
         console.log("OK");
         console.log(this.selectedProperty)
         console.log(reponse);
-        // if (reponse.status === "success") {
-        //   console.log("Redirection vers la page home");
-        //   this.router.navigate(['/auth','success']);
-        // } else {
-        //   console.log("Échec de la connexion, réponse:", reponse);
-        // }
+        window.location.reload();
       }
+
     })
   }
 
@@ -240,12 +253,8 @@ export class AddPropertyPage implements OnInit {
         console.log("OK");
         console.log(this.selectedProperty)
         console.log(reponse);
-        // if (reponse.status === "success") {
-        //   console.log("Redirection vers la page home");
-        //   this.router.navigate(['/auth','success']);
-        // } else {
-        //   console.log("Échec de la connexion, réponse:", reponse);
-        // }
+        window.location.reload();
+
       }
     })
   }
@@ -255,12 +264,8 @@ export class AddPropertyPage implements OnInit {
         console.log("OK");
         console.log(this.selectedProperty)
         console.log(reponse);
-        // if (reponse.status === "success") {
-        //   console.log("Redirection vers la page home");
-        //   this.router.navigate(['/auth','success']);
-        // } else {
-        //   console.log("Échec de la connexion, réponse:", reponse);
-        // }
+        window.location.reload();
+
       }
     })
   }
@@ -270,12 +275,8 @@ export class AddPropertyPage implements OnInit {
         console.log("OK");
         console.log(this.selectedProperty)
         console.log(reponse);
-        // if (reponse.status === "success") {
-        //   console.log("Redirection vers la page home");
-        //   this.router.navigate(['/auth','success']);
-        // } else {
-        //   console.log("Échec de la connexion, réponse:", reponse);
-        // }
+        window.location.reload();
+
       }
     })
   }

@@ -27,9 +27,32 @@ export class ViewPropertyPage implements OnInit {
     this.Choose()
   }
 
-  Singleproperty(type: string): void {
+  Singlestoreproperty(type: string): void {
     this.router.navigate(['/user/invoice', type = 'store']);
   }
+  Singlehouseproperty(type: string): void {
+    this.router.navigate(['/user/invoice', type = 'house']);
+  }
+  Singleagencyproperty(type: string): void {
+    this.router.navigate(['/user/invoice', type = 'agency']);
+  }
+  Singlecompanyproperty(type: string): void {
+    this.router.navigate(['/user/invoice', type = 'company']);
+  }
+
+  Adddevicestore(type: string): void {
+    this.router.navigate(['/user/add-property', type = 'store']);
+  }
+  Adddevicehouse(type: string): void {
+    this.router.navigate(['/user/add-property', type = 'house']);
+  }
+  Adddeviceagency(type: string): void {
+    this.router.navigate(['/user/add-property', type = 'agency']);
+  }
+  Adddevicecompany(type: string): void {
+    this.router.navigate(['/user/add-property', type = 'company']);
+  }
+
 
   Choose(): void{
     if(this.propertyType==='House'){

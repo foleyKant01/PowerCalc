@@ -22,6 +22,10 @@ const routes: Routes = [
       loadChildren: () => import('./add-property/add-property.module').then( m => m.AddPropertyPageModule)
     },
     {
+      path: 'add-property/:type',
+      loadChildren: () => import('./add-property/add-property.module').then( m => m.AddPropertyPageModule)
+    },
+    {
       path: 'header',
       loadChildren: () => import('./include/header/header.module').then( m => m.HeaderPageModule)
     },

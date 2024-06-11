@@ -24,9 +24,6 @@ class PropertyApi(Resource):
         
         if route == "AddDeviceCompany":
             return AddDeviceCompany()
-        
-        if route == "GenerateInvoice":
-            return GenerateInvoice()
     
 
     

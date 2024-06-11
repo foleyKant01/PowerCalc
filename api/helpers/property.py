@@ -145,6 +145,7 @@ def AllStoreDevice():
     time_device_used = 0
     wa_device_used = 0
     device_invoice = 0
+    invoice = 0
     all_device_invoice = []
     
     try:
@@ -153,10 +154,15 @@ def AllStoreDevice():
         devices_info = []
 
         for devices  in all_devices:
-            time_device_used = int(devices.de_usage_time )* int(devices.de_usage_day)
+
+            de_usage_time = int(''.join(filter(str.isdigit, devices.de_usage_time)))
+            de_usage_day = int(''.join(filter(str.isdigit, devices.de_usage_day)))
+            de_wattage = int(''.join(filter(str.isdigit, devices.de_wattage)))
+
+            time_device_used = de_usage_time * de_usage_day
             print('Time device used: ', time_device_used)
 
-            wa_device_used = time_device_used * int(devices.de_wattage)
+            wa_device_used = time_device_used * de_wattage
             Wa_device_used = wa_device_used / 1000
             print('Wattage device used: ', Wa_device_used, 'Kwh')
 
@@ -199,15 +205,20 @@ def AllHouseDevice():
     all_device_invoice = []
     
     try:
-        all_devices = Store.query.all()
+        all_devices = House.query.all()
 
         devices_info = []
 
         for devices  in all_devices:
-            time_device_used = int(devices.de_usage_time )* int(devices.de_usage_day)
+
+            de_usage_time = int(''.join(filter(str.isdigit, devices.de_usage_time)))
+            de_usage_day = int(''.join(filter(str.isdigit, devices.de_usage_day)))
+            de_wattage = int(''.join(filter(str.isdigit, devices.de_wattage)))
+
+            time_device_used = de_usage_time * de_usage_day
             print('Time device used: ', time_device_used)
 
-            wa_device_used = time_device_used * int(devices.de_wattage)
+            wa_device_used = time_device_used * de_wattage
             Wa_device_used = wa_device_used / 1000
             print('Wattage device used: ', Wa_device_used, 'Kwh')
 
@@ -227,7 +238,6 @@ def AllHouseDevice():
                 'device_invoice': device_invoice    
             }
             devices_info.append(devices_infos)
-
             
 
         response['status'] = 'success'
@@ -250,15 +260,20 @@ def AllAgencyDevice():
     all_device_invoice = []
     
     try:
-        all_devices = Store.query.all()
+        all_devices = Agency.query.all()
 
         devices_info = []
 
         for devices  in all_devices:
-            time_device_used = int(devices.de_usage_time )* int(devices.de_usage_day)
+
+            de_usage_time = int(''.join(filter(str.isdigit, devices.de_usage_time)))
+            de_usage_day = int(''.join(filter(str.isdigit, devices.de_usage_day)))
+            de_wattage = int(''.join(filter(str.isdigit, devices.de_wattage)))
+
+            time_device_used = de_usage_time * de_usage_day
             print('Time device used: ', time_device_used)
 
-            wa_device_used = time_device_used * int(devices.de_wattage)
+            wa_device_used = time_device_used * de_wattage
             Wa_device_used = wa_device_used / 1000
             print('Wattage device used: ', Wa_device_used, 'Kwh')
 
@@ -278,7 +293,6 @@ def AllAgencyDevice():
                 'device_invoice': device_invoice    
             }
             devices_info.append(devices_infos)
-
             
 
         response['status'] = 'success'
@@ -301,15 +315,20 @@ def AllCompanyDevice():
     all_device_invoice = []
     
     try:
-        all_devices = Store.query.all()
+        all_devices = Company.query.all()
 
         devices_info = []
 
         for devices  in all_devices:
-            time_device_used = int(devices.de_usage_time )* int(devices.de_usage_day)
+
+            de_usage_time = int(''.join(filter(str.isdigit, devices.de_usage_time)))
+            de_usage_day = int(''.join(filter(str.isdigit, devices.de_usage_day)))
+            de_wattage = int(''.join(filter(str.isdigit, devices.de_wattage)))
+
+            time_device_used = de_usage_time * de_usage_day
             print('Time device used: ', time_device_used)
 
-            wa_device_used = time_device_used * int(devices.de_wattage)
+            wa_device_used = time_device_used * de_wattage
             Wa_device_used = wa_device_used / 1000
             print('Wattage device used: ', Wa_device_used, 'Kwh')
 
@@ -329,7 +348,6 @@ def AllCompanyDevice():
                 'device_invoice': device_invoice    
             }
             devices_info.append(devices_infos)
-
             
 
         response['status'] = 'success'
