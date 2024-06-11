@@ -9,7 +9,7 @@
         <ion-img src="assets/img/chart-pie1.png"></ion-img>
       </ion-segment>
       <h3 class="amount-title">Amount</h3>
-      <ion-label class="amount">150000 Fcfa</ion-label>
+      <ion-label class="amount" *ngIf="total_invoice">{{total_invoice}} fcfa</ion-label>
     </div>
   </ion-row>
 
@@ -19,41 +19,19 @@
       <ion-list lines="none">
         <ion-item>
           <ion-label>Total Device:</ion-label>
-          <ion-label slot="end">5</ion-label>
+          <ion-label slot="end">{{store?.length}}</ion-label>
         </ion-item>
-        <ion-item>
-          <ion-label>Television:</ion-label>
-          <ion-label slot="end">3000f</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>Refrigerator:</ion-label>
-          <ion-label slot="end">5000f</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>Microwave:</ion-label>
-          <ion-label slot="end">3000f</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>Air Conditioner:</ion-label>
-          <ion-label slot="end">5000f</ion-label>
-        </ion-item>
-        <ion-item>
-          <ion-label>High Heater:</ion-label>
-          <ion-label slot="end">5000f</ion-label>
+        <ion-item *ngFor="let item of devices_info">
+          <ion-label>{{item.de_name}}:</ion-label>
+          <ion-label slot="end">{{item.device_invoice}} fcfa</ion-label>
         </ion-item>
       </ion-list>
-      
     </div>
-  
   </ion-row>
-
-
 </ion-content>
 
 <ion-toolbar>
   <div class="footer_btn">
-    <ion-button class="back_button" fill="outline" size="default" shape="round" routerLink="/user/home">Back</ion-button>
-    <ion-button class="print_button"   fill="solid" size="default" shape="round"
-      >Print</ion-button>
+    <ion-button class="back_button" fill="outline" size="default" shape="round" routerLink="/user/home">New invoice</ion-button>
   </div>
 </ion-toolbar>

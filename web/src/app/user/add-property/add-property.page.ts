@@ -30,6 +30,7 @@ export class AddPropertyPage implements OnInit {
     de_amperage: new FormControl(null, Validators.required),
     de_wattage: new FormControl(null, Validators.required),
     de_usage_time: new FormControl(null, Validators.required),
+    de_usage_day: new FormControl(null, Validators.required),
   });
 
   type_property = [

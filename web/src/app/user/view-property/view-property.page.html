@@ -14,12 +14,12 @@
   <ion-row class="">
     <div class="device-liste">
       <ion-label class="label">Device list</ion-label>
-       <ion-list lines="none" *ngFor="let item of house">
+       <ion-list lines="none">
         <ion-item>
           <ion-label>Total Device:</ion-label>
           <ion-label slot="end">{{house?.length}}</ion-label>
         </ion-item>
-        <ion-item class="p-0 m-0">
+        <ion-item class="p-0 m-0" *ngFor="let item of house">
           <ion-label class="p-0 m-0">{{item.de_name}}</ion-label>
           <ion-button >
             <ion-icon class="p-1" id="edit" name="pencil" aria-label="edit"></ion-icon>
@@ -47,12 +47,12 @@
   <ion-row class="">
     <div class="device-liste">
       <ion-label class="label">Device list</ion-label>
-       <ion-list lines="none" *ngFor="let item of store">
+       <ion-list lines="none">
         <ion-item>
           <ion-label>Total Device:</ion-label>
           <ion-label slot="end">{{store?.length}}</ion-label>
         </ion-item>
-        <ion-item class="p-0 m-0">
+        <ion-item class="p-0 m-0" *ngFor="let item of store">
           <ion-label class="p-0 m-0">{{item.de_name}}</ion-label>
           <ion-button >
             <ion-icon class="p-1" id="edit" name="pencil" aria-label="edit"></ion-icon>
@@ -64,7 +64,7 @@
       </ion-list>
       <div class="button-container">
         <ion-button expand="block" color="primary">Add Invoice</ion-button>
-        <ion-button expand="block" color="secondary">Generate Invoice</ion-button>
+        <ion-button (click)="Singleproperty(store)" expand="block" color="secondary">Generate Invoice</ion-button>
       </div>
     </div>
   </ion-row>
@@ -80,12 +80,12 @@
   <ion-row class="">
     <div class="device-liste">
       <ion-label class="label">Device list</ion-label>
-       <ion-list lines="none" *ngFor="let item of agency">
+       <ion-list lines="none">
         <ion-item>
           <ion-label>Total Device:</ion-label>
           <ion-label slot="end">{{agency?.length}}</ion-label>
         </ion-item>
-        <ion-item class="p-0 m-0">
+        <ion-item class="p-0 m-0" *ngFor="let item of agency">
           <ion-label class="p-0 m-0">{{item.de_name}}</ion-label>
           <ion-button >
             <ion-icon class="p-1" id="edit" name="pencil" aria-label="edit"></ion-icon>
@@ -113,12 +113,12 @@
   <ion-row class="">
     <div class="device-liste" >
       <ion-label class="label">Device list</ion-label>
-      <ion-list lines="none" *ngFor="let item of company">
+      <ion-list lines="none">
         <ion-item>
           <ion-label>Total Device:</ion-label>
           <ion-label slot="end">{{company?.length}}</ion-label>
         </ion-item>
-        <ion-item class="p-0 m-0">
+        <ion-item class="p-0 m-0" *ngFor="let item of company">
           <ion-label class="p-0 m-0">{{item.de_name}}</ion-label>
           <ion-button >
             <ion-icon class="p-1" id="edit" name="pencil" aria-label="edit"></ion-icon>
@@ -130,7 +130,7 @@
       </ion-list>
       <div class="button-container">
         <ion-button expand="block" color="primary">Add Invoice</ion-button>
-        <ion-button expand="block" color="secondary">Generate Invoice</ion-button>
+        <ion-button routerLink="/user/invoice" expand="block" color="secondary">Generate Invoice</ion-button>
       </div>
     </div>
   </ion-row>

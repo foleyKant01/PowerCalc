@@ -11,6 +11,7 @@ export class ViewPropertyPage implements OnInit {
 
   house: any;
   store: any;
+  device_invoice: any;
   agency: any;
   company: any;
   propertyType: string | undefined ;
@@ -24,6 +25,10 @@ export class ViewPropertyPage implements OnInit {
       console.log(this.propertyType)
     });
     this.Choose()
+  }
+
+  Singleproperty(type: string): void {
+    this.router.navigate(['/user/invoice', type = 'store']);
   }
 
   Choose(): void{
@@ -44,7 +49,7 @@ export class ViewPropertyPage implements OnInit {
   Houseproperty(): void {
     this.http.AllHouseDevice().subscribe({
       next: (response: any) => {
-        this.house = response?.devices; // Stocker les produits dans le tableau
+        this.house = response?.devices_info;
         console.log(this.house)
       },
       error: (error) => {
@@ -56,7 +61,7 @@ export class ViewPropertyPage implements OnInit {
   Storeproperty(): void {
     this.http.AllStoreDevice().subscribe({
       next: (response: any) => {
-        this.store = response?.devices; // Stocker les produits dans le tableau
+        this.store = response?.devices_info;
         console.log(this.store)
       },
       error: (error) => {
@@ -68,7 +73,7 @@ export class ViewPropertyPage implements OnInit {
   Agencyproperty(): void {
     this.http.AllAgencyDevice().subscribe({
       next: (response: any) => {
-        this.agency = response?.devices; // Stocker les produits dans le tableau
+        this.agency = response?.devices_info;
         console.log(this.agency)
       },
       error: (error) => {
@@ -80,7 +85,7 @@ export class ViewPropertyPage implements OnInit {
   Companyproperty(): void {
     this.http.AllCompanyDevice().subscribe({
       next: (response: any) => {
-        this.company = response?.devices; // Stocker les produits dans le tableau
+        this.company = response?.devices_info;
         console.log(this.company)
       },
       error: (error) => {

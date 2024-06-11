@@ -24,6 +24,11 @@ class PropertyApi(Resource):
         
         if route == "AddDeviceCompany":
             return AddDeviceCompany()
+        
+        if route == "GenerateInvoice":
+            return GenerateInvoice()
+    
+
     
     def get(self, route):
         if route == "AllStoreDevice":
@@ -33,8 +38,8 @@ class PropertyApi(Resource):
             return AllHouseDevice()
         
         if route == "AllAgencyDevice":
-            return AllAgencyDevice()
+            return AllAgencyDevice() 
         
         if route == "AllCompanyDevice":
             return AllCompanyDevice()
-    
+        

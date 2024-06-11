@@ -26,7 +26,7 @@ const routes: Routes = [
       loadChildren: () => import('./include/header/header.module').then( m => m.HeaderPageModule)
     },
     {
-      path: 'invoice',
+      path: 'invoice/:type',
       loadChildren: () => import('./invoice/invoice.module').then( m => m.InvoicePageModule)
     },
     {

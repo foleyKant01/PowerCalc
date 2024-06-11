@@ -67,6 +67,15 @@ export class PowercalcServiceService {
     return this.http.post("http://127.0.0.1:5000/api/property/AddDeviceCompany", body, httpOptions)
   }
 
+  GenerateInvoice(body:any){
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+      })
+    }
+    return this.http.post("http://127.0.0.1:5000/api/property/GenerateInvoice", body, httpOptions)
+  }
+
 
   AllStoreDevice(): Observable<any>{
     return this.http.get<any[]>("http://127.0.0.1:5000/api/property/AllStoreDevice")
