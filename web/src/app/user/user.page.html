@@ -1,3 +1,86 @@
+<!-- <router-outlet></router-outlet> -->
 
+<ion-split-pane contentId="main-content">
+  <ion-menu contentId="main-content" type="overlay">
+    <ion-content>
+      <div class="options-btn">
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+      </div>
+      <ion-avatar>
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      
+
+      <ion-list id="inbox-list">
+        <h2 class=" ion-text-capitalize"> </h2>
+        <ion-label>  </ion-label>
+        <!-- <ion-note class="ion-text-center"></ion-note> -->
+
+        <div class="menu-option">
+          <ion-menu-toggle auto-hide="false" >
+          <ion-item routerDirection="root" [routerLink]="" lines="none" detail="false" routerLinkActive="selected">
+            <ion-icon color="primary" slot="start" ></ion-icon>
+            <ion-label></ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        </div>
+        
+      </ion-list>
+
+      <ion-list id="labels-list">
+        <ion-list-header>Settings</ion-list-header>
+        <ion-menu-toggle>
+          <ion-item  lines="none" routerDirection="root" routerLink="/user/edit-pin-code">
+            <ion-icon color="primary" slot="start" ios="lock-closed-outline" md="lock-closed-sharp"></ion-icon>
+            <ion-label></ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+
+      <ion-list id="labels-list"> 
+        <ion-menu-toggle>
+          <ion-list-header>Help and contact</ion-list-header>
+
+          <ion-item  routerDirection="root" routerLink="" lines="none">
+            <ion-icon color="primary" slot="start" ios="share-social-outline" md="share-social-sharp"></ion-icon>
+            <ion-label>Share the App</ion-label>
+          </ion-item>
+          <!-- <ion-item  routerDirection="root" routerLink="/user/contact-us" lines="none">
+            <ion-icon slot="start" ios="call-outline" md="call-sharp"></ion-icon>
+            <ion-label>Contact us</ion-label>
+          </ion-item> -->
+          <ion-item  routerDirection="root" routerLink="/user/about-us" lines="none">
+            <ion-icon color="primary" slot="start" ios="alert-circle-outline" md="alert-circle-sharp"></ion-icon>
+            <ion-label>About</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+
+      <!-- <br><br><br> -->
+      <!-- <br><br><br> -->
+
+      <ion-list id="labels-list">
+        <ion-menu-toggle>
+          <ion-list-header></ion-list-header>
+
+          <ion-item   lines="none">
+            <ion-icon slot="start" color="primary" name="power-outline" md="power-sharp"></ion-icon>
+            <ion-label>Log out</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+
+      
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
   <ion-router-outlet></ion-router-outlet>
 
+
+
+     
+  </div>
+
+
+
+</ion-split-pane> 
