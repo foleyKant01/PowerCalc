@@ -29,9 +29,15 @@ export class AddPropertyPage implements OnInit {
     de_name: new FormControl(null, Validators.required),
     de_amperage: new FormControl(null, Validators.required),
     de_wattage: new FormControl(null, Validators.required),
-    de_usage_time: new FormControl(null, Validators.required),
-    de_usage_day: new FormControl(null, Validators.required),
+    de_usage_time: new FormControl(null, Validators.pattern('^[0-9]*$')),
+    de_usage_day: new FormControl(null, Validators.pattern('^[0-9]*$')),
   });
+
+  validateNumeric(event: any) {
+    const input = event.target;
+    const value = input.value;
+    input.value = value.replace(/[^0-9]/g, '');
+  }
 
   type_property = [
     {

@@ -1,8 +1,23 @@
-<ion-header [translucent]="true">
+<ion-header id="header" [translucent]="true">
   <ion-toolbar>
-    <ion-title>view-property</ion-title>
+    <ion-grid class="head-grid">
+      <ion-row>
+        <ion-col size="2">
+          <ion-icon id="menu" name="menu" aria-label="Menu"></ion-icon>
+        </ion-col>
+        <ion-col size="8">
+          <ion-title class="p-0 m-0" style="font-size: 100%;" id="title">
+            <ion-router-link routerLink="/user/home"><h2 style="width: 100%;" class="m-0">Power Calc</h2></ion-router-link>
+          </ion-title>
+        </ion-col>
+        <ion-col size="2">
+          <ion-icon id="person" name="person" aria-label="Profile"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-toolbar>
 </ion-header>
+
 
 <ion-content *ngIf="house">
   <div class="view-PropertyHeader">
