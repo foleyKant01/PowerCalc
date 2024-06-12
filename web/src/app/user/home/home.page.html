@@ -1,4 +1,18 @@
-<app-header></app-header>
+<ion-header [translucent]="true" collapse="fade" class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button color="medium"></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="text-center" position="stacked" [routerLink]="['/user', 'home']" size="medium">
+      PowerCal
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/user','profile']">
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
 
 <ion-content id="content" [fullscreen]="true">
   <div class="circle-container">
@@ -6,26 +20,31 @@
       <div class="inner-circle">
         <div>
           <span class="inner-circle-text">Prix du KWH</span>
-          <span style="color: #EE7D04!important;" class="inner-circle-text"><h3><b>80 FCFA</b></h3></span>
+          <span style="color: #EE7D04!important;" class="inner-circle-text">
+            <h3><b>80 FCFA</b></h3>
+          </span>
         </div>
       </div>
     </div>
   </div>
-  <div id="container" >
-    <p>Calcule générés</p> <!-- Ajout du paragraphe -->
+  <div id="container">
+    <p>Calcule générés</p>
     <div class="property">
-      <ion-router-link style="background-color: #F8A042!important; padding: 5px 8px 5px 8px; border-radius: 20px;" routerLink="/user/add-property">add a property</ion-router-link>
+      <ion-router-link style="background-color: #F8A042!important; padding: 5px 8px; border-radius: 20px;"
+        routerLink="/user/add-property">add a property</ion-router-link>
       <ion-list style="height: 30px; background-color: rgb(233, 233, 233);">
-
       </ion-list>
       <ion-grid class="p-0">
-        <ion-row *ngFor="let item of type_property" class="p-0" style="display: flex; align-items: center; height: auto; justify-content: space-around;">
+        <ion-row *ngFor="let item of type_property" class="p-0"
+          style="display: flex; align-items: center; height: auto; justify-content: space-around;">
           <ion-col style="display: flex; justify-content: space-between;" size="8">
             <ion-col style="padding-top: 13px;" size="2">
               <ion-icon style="color: black;" id="home" name="home" aria-label="home"></ion-icon>
             </ion-col>
-            <ion-col style="padding-top: 9px;" size="10" >
-              <h2 style="text-align: left;"><h3 class="m-0 h3">{{item.type}}</h3></h2>
+            <ion-col style="padding-top: 9px;" size="10">
+              <h2 style="text-align: left;">
+                <h3 class="m-0 h3">{{item.type}}</h3>
+              </h2>
             </ion-col>
           </ion-col>
           <ion-col class="p-0 pt-1 pb-1" size="4">

@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/foleykant/Work/Foley/tt_officiel_Api/venv"
+set -gx VIRTUAL_ENV "/home/francis/Bureau/projects/PowerCalc/api/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
