@@ -243,9 +243,6 @@ export class AddPropertyPage implements OnInit {
   Adddevicestore(){
     this.http.AddDeviceStore(this.property_form.value).subscribe({
       next: (reponse:any)=>{
-        console.log("OK");
-        console.log(this.selectedProperty)
-        console.log(reponse);
         window.location.reload();
       }
 
@@ -255,9 +252,6 @@ export class AddPropertyPage implements OnInit {
   Adddevicehouse(){
     this.http.AddDeviceHouse(this.property_form.value).subscribe({
       next: (reponse:any)=>{
-        console.log("OK");
-        console.log(this.selectedProperty)
-        console.log(reponse);
         window.location.reload();
 
       }
@@ -266,9 +260,6 @@ export class AddPropertyPage implements OnInit {
   Adddeviceagency(){
     this.http.AddDeviceAgency(this.property_form.value).subscribe({
       next: (reponse:any)=>{
-        console.log("OK");
-        console.log(this.selectedProperty)
-        console.log(reponse);
         window.location.reload();
 
       }
@@ -277,9 +268,6 @@ export class AddPropertyPage implements OnInit {
   Adddevicecompany(){
     this.http.AddDeviceCompany(this.property_form.value).subscribe({
       next: (reponse:any)=>{
-        console.log("OK");
-        console.log(this.selectedProperty)
-        console.log(reponse);
         window.location.reload();
 
       }
