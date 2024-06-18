@@ -83,13 +83,13 @@
               </h2>
             </ion-col>
           </ion-col>
-          <ion-col class="p-0 pt-1 pb-1" size="4">
+          <ion-col class="p-0 pt-1 pb-1" size="4" >
             <ion-button *ngFor="let item of agency_property"  (click)="Singleproperty(item.type)" class="custom-button">
               <ion-icon id="view" name="eye" aria-label="view"></ion-icon>
             </ion-button>
           </ion-col>
         </ion-row>
-        <ion-row *ngIf="company?.length!=0" class="p-0"
+        <ion-row *ngIf="company?.length!=0" class="p-0 "
           style="display: flex; align-items: center; height: auto; justify-content: space-around;">
           <ion-col style="display: flex; justify-content: space-between;" size="8">
             <ion-col style="padding-top: 13px;" size="2">

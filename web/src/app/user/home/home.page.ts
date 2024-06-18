@@ -60,7 +60,6 @@ export class HomePage implements OnInit{
     this.http.AllHouseDevice().subscribe({
       next: (response: any) => {
         this.house = response?.devices_info;
-        console.log('ok')
         console.log(this.house)
       },
       error: (error) => {
@@ -73,7 +72,6 @@ export class HomePage implements OnInit{
     this.http.AllStoreDevice().subscribe({
       next: (response: any) => {
         this.store = response?.devices_info;
-        console.log('ok')
         console.log(this.store)
       },
       error: (error) => {
