@@ -23,7 +23,6 @@ export class AddPropertyPage implements OnInit {
 
   }
 
-
   property_form: FormGroup = new FormGroup({
     p_name: new FormControl(null, Validators.required),
     de_name: new FormControl(null, Validators.required),

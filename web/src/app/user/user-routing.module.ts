@@ -37,8 +37,8 @@ const routes: Routes = [
       path: 'view-property/:type',
       loadChildren: () => import('./view-property/view-property.module').then( m => m.ViewPropertyPageModule)
     },
- 
-  
+
+
   ]
   },
 
