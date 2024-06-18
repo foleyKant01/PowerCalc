@@ -17,6 +17,7 @@ def AddDeviceStore():
         de_wattage = (request.json.get('de_wattage'))
         de_usage_time = (request.json.get('de_usage_time'))
         de_usage_day = (request.json.get('de_usage_day'))
+        de_property = 'Store'
         de_uid = str(uuid.uuid4())
         
         new_device = Store()
@@ -25,6 +26,7 @@ def AddDeviceStore():
         new_device.de_wattage = de_wattage
         new_device.de_usage_time = de_usage_time
         new_device.de_usage_day = de_usage_day
+        new_device.de_property = de_property
         new_device.de_uid = de_uid
         
         db.session.add(new_device)
@@ -50,6 +52,7 @@ def AddDeviceHouse():
         de_wattage = (request.json.get('de_wattage'))
         de_usage_time = (request.json.get('de_usage_time'))
         de_usage_day = (request.json.get('de_usage_day'))
+        de_property = 'House'
         de_uid = str(uuid.uuid4())
         
         new_device = House()
@@ -58,6 +61,7 @@ def AddDeviceHouse():
         new_device.de_wattage = de_wattage
         new_device.de_usage_time = de_usage_time
         new_device.de_usage_day = de_usage_day
+        new_device.de_property = de_property
         new_device.de_uid = de_uid
         
         db.session.add(new_device)
@@ -83,6 +87,7 @@ def AddDeviceAgency():
         de_wattage = (request.json.get('de_wattage'))
         de_usage_time = (request.json.get('de_usage_time'))
         de_usage_day = (request.json.get('de_usage_day'))
+        de_property = 'Agency'
         de_uid = str(uuid.uuid4())
         
         new_device = Agency()
@@ -91,6 +96,7 @@ def AddDeviceAgency():
         new_device.de_wattage = de_wattage
         new_device.de_usage_time = de_usage_time
         new_device.de_usage_day = de_usage_day
+        new_device.de_property = de_property
         new_device.de_uid = de_uid
         
         db.session.add(new_device)
@@ -116,6 +122,7 @@ def AddDeviceCompany():
         de_wattage = (request.json.get('de_wattage'))
         de_usage_time = (request.json.get('de_usage_time'))
         de_usage_day = (request.json.get('de_usage_day'))
+        de_property = 'Company'
         de_uid = str(uuid.uuid4())
         
         new_device = Company()
@@ -124,6 +131,7 @@ def AddDeviceCompany():
         new_device.de_wattage = de_wattage
         new_device.de_usage_time = de_usage_time
         new_device.de_usage_day = de_usage_day
+        new_device.de_property = de_property
         new_device.de_uid = de_uid
         
         db.session.add(new_device)
@@ -177,7 +185,8 @@ def AllStoreDevice():
                 'de_amperage': devices.de_amperage,              
                 'de_wattage': devices.de_wattage,              
                 'de_usage_time': devices.de_usage_time,              
-                'de_usage_day': devices.de_usage_day,              
+                'de_usage_day': devices.de_usage_day, 
+                'de_property': devices.de_property,             
                 'de_uid': devices.de_uid, 
                 'device_invoice': device_invoice    
             }
@@ -233,7 +242,8 @@ def AllHouseDevice():
                 'de_amperage': devices.de_amperage,              
                 'de_wattage': devices.de_wattage,              
                 'de_usage_time': devices.de_usage_time,              
-                'de_usage_day': devices.de_usage_day,              
+                'de_usage_day': devices.de_usage_day, 
+                'de_property': devices.de_property,             
                 'de_uid': devices.de_uid, 
                 'device_invoice': device_invoice    
             }
@@ -288,7 +298,8 @@ def AllAgencyDevice():
                 'de_amperage': devices.de_amperage,              
                 'de_wattage': devices.de_wattage,              
                 'de_usage_time': devices.de_usage_time,              
-                'de_usage_day': devices.de_usage_day,              
+                'de_usage_day': devices.de_usage_day, 
+                'de_property': devices.de_property,             
                 'de_uid': devices.de_uid, 
                 'device_invoice': device_invoice    
             }
@@ -343,7 +354,8 @@ def AllCompanyDevice():
                 'de_amperage': devices.de_amperage,              
                 'de_wattage': devices.de_wattage,              
                 'de_usage_time': devices.de_usage_time,              
-                'de_usage_day': devices.de_usage_day,              
+                'de_usage_day': devices.de_usage_day, 
+                'de_property': devices.de_property,             
                 'de_uid': devices.de_uid, 
                 'device_invoice': device_invoice    
             }

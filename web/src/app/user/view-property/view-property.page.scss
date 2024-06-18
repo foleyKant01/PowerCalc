@@ -26,24 +26,17 @@ h5 {
     margin-top: 25px;
 
     padding: 15px 0px 8px 0px;
-    border-radius: 10px;
     font-size: 1rem;
-
-    background-color: #ee7d04;
-    // border: 1px solid;
-    // color: white;
     text-align: center;
     text-decoration: none;
     display: flex;
     justify-content: center;
     cursor: pointer;
     transition: background-color 0.3s;
-
     margin-right: 10px;
-
-    &:hover {
-      background-color: #eecba5;
-    }
+    // &:hover {
+    //   background-color: #eecba5;
+    // }
 
 }
 
@@ -88,9 +81,9 @@ h5 {
 .device-liste {
     background: #EFF3F4;
     width: 100%;
-    top: 12vh;
+    top: 5vh;
     position: relative;
-    height: 70vh;
+    height: 100vh;
     border-top-left-radius: 4rem;
     border-top-right-radius: 4rem;
 
@@ -132,7 +125,7 @@ h5 {
 .button-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .button-container ion-button {

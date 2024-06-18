@@ -14,9 +14,6 @@
 
 <ion-content [fullscreen]="true">
   <ng-container *ngIf="house">
-    <div class="view-PropertyHeader">
-      <h2 class="custom-h5">View-Property</h2>
-    </div>
     <div class="view-PropertyButtom">
       <h5 shape="round" expand="block">{{propertyType}}</h5>
     </div>
@@ -37,9 +34,11 @@
               <ion-icon class="p-1" id="trash" name="trash" aria-label="trash"></ion-icon>
             </ion-button>
           </ion-item>
+          <div class="pt-4" style="display: flex; justify-content: center;">
+            <h5 shape="round" (click)="Adddevicecompany(company)" expand="block"><ion-icon class="p-3 pt-2 pb-2" style="background: rgb(212, 212, 212);" name="add" id="add" aria-hidden="true"></ion-icon></h5>
+          </div>
         </ion-list>
         <div class="button-container">
-          <ion-button (click)="Adddevicehouse(house)" expand="block" color="primary">Add Invoice</ion-button>
           <ion-button (click)="Singlehouseproperty(house)" expand="block" color="secondary">Generate Invoice</ion-button>
         </div>
       </div>
@@ -47,9 +46,6 @@
   </ng-container>
 
   <ng-container *ngIf="store">
-    <div class="view-PropertyHeader">
-      <h2 class="custom-h5">View-Property</h2>
-    </div>
     <div class="view-PropertyButtom">
       <h5 shape="round" expand="block">{{propertyType}}</h5>
     </div>
@@ -70,9 +66,11 @@
               <ion-icon class="p-1" id="trash" name="trash" aria-label="trash"></ion-icon>
             </ion-button>
           </ion-item>
+          <div class="pt-4" style="display: flex; justify-content: center;">
+            <h5 shape="round" (click)="Adddevicecompany(company)" expand="block"><ion-icon class="p-3 pt-2 pb-2" style="background: rgb(212, 212, 212);" name="add" id="add" aria-hidden="true"></ion-icon></h5>
+          </div>
         </ion-list>
         <div class="button-container">
-          <ion-button (click)="Adddevicestore(store)" expand="block" color="primary">Add Invoice</ion-button>
           <ion-button (click)="Singlestoreproperty(store)" expand="block" color="secondary">Generate Invoice</ion-button>
         </div>
       </div>
@@ -80,9 +78,6 @@
   </ng-container>
 
   <ng-container *ngIf="agency">
-    <div class="view-PropertyHeader">
-      <h2 class="custom-h5">View-Property</h2>
-    </div>
     <div class="view-PropertyButtom">
       <h5 shape="round" expand="block">{{propertyType}}</h5>
     </div>
@@ -103,9 +98,11 @@
               <ion-icon class="p-1" id="trash" name="trash" aria-label="trash"></ion-icon>
             </ion-button>
           </ion-item>
+          <div class="pt-4" style="display: flex; justify-content: center;">
+            <h5 shape="round" (click)="Adddevicecompany(company)" expand="block"><ion-icon class="p-3 pt-2 pb-2" style="background: rgb(212, 212, 212);" name="add" id="add" aria-hidden="true"></ion-icon></h5>
+          </div>
         </ion-list>
         <div class="button-container">
-          <ion-button (click)="Adddeviceagency(agency)" expand="block" color="primary">Add Invoice</ion-button>
           <ion-button (click)="Singleagencyproperty(agency)" expand="block" color="secondary">Generate Invoice</ion-button>
         </div>
       </div>
@@ -113,9 +110,6 @@
   </ng-container>
 
   <ng-container *ngIf="company">
-    <div class="view-PropertyHeader">
-      <h2 class="custom-h5">View-Property</h2>
-    </div>
     <div class="view-PropertyButtom">
       <h5 shape="round" expand="block">{{propertyType}}</h5>
     </div>
@@ -136,9 +130,11 @@
               <ion-icon class="p-1" id="trash" name="trash" aria-label="trash"></ion-icon>
             </ion-button>
           </ion-item>
+          <div class="pt-4" style="display: flex; justify-content: center;">
+            <h5 shape="round" (click)="Adddevicecompany(company)" expand="block"><ion-icon class="p-3 pt-2 pb-2" style="background: rgb(212, 212, 212);" name="add" id="add" aria-hidden="true"></ion-icon></h5>
+          </div>
         </ion-list>
         <div class="button-container">
-          <ion-button (click)="Adddevicecompany(company)" expand="block" color="primary">Add Invoice</ion-button>
           <ion-button (click)="Singlecompanyproperty(company)" expand="block" color="secondary">Generate Invoice</ion-button>
         </div>
       </div>

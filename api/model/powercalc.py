@@ -25,8 +25,10 @@ class Store(db.Model):
     de_usage_time = db.Column(db.String(128), nullable=False)
     de_usage_day = db.Column(db.String(128), nullable=False)
     de_uid = db.Column(db.String(128), nullable=False)
+    de_property = db.Column(db.String(128), nullable=False)
     creation_date = db.Column(db.DateTime, nullable=False, default=datetime.datetime.utcnow)
     update_date = db.Column(db.DateTime, nullable=False, default=datetime.datetime.utcnow)
+
 
 class House(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
@@ -36,6 +38,7 @@ class House(db.Model):
     de_usage_time = db.Column(db.String(128), nullable=False)
     de_usage_day = db.Column(db.String(128), nullable=False)
     de_uid = db.Column(db.String(128), nullable=False)
+    de_property = db.Column(db.String(128), nullable=False)
     creation_date = db.Column(db.DateTime, nullable=False, default=datetime.datetime.utcnow)
     update_date = db.Column(db.DateTime, nullable=False, default=datetime.datetime.utcnow)
 
@@ -48,6 +51,7 @@ class Agency(db.Model):
     de_usage_time = db.Column(db.String(128), nullable=False)
     de_usage_day = db.Column(db.String(128), nullable=False)
     de_uid = db.Column(db.String(128), nullable=False)
+    de_property = db.Column(db.String(128), nullable=False)
     creation_date = db.Column(db.DateTime, nullable=False, default=datetime.datetime.utcnow)
     update_date = db.Column(db.DateTime, nullable=False, default=datetime.datetime.utcnow)
 
@@ -60,5 +64,6 @@ class Company(db.Model):
     de_usage_time = db.Column(db.String(128), nullable=False)
     de_usage_day = db.Column(db.String(128), nullable=False)
     de_uid = db.Column(db.String(128), nullable=False)
+    de_property = db.Column(db.String(128), nullable=False)
     creation_date = db.Column(db.DateTime, nullable=False, default=datetime.datetime.utcnow)
     update_date = db.Column(db.DateTime, nullable=False, default=datetime.datetime.utcnow)
